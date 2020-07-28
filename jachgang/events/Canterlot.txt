@@ -1,0 +1,242 @@
+﻿add_namespace = canterlot
+
+###country_event = {   ######### Talk about Olenian Territories ######
+	##id = changelings.1
+	##immediate = {log = "[GetDateText]: [Root.GetName]: event ##changelings.1"}
+	##title = changelings.1.t
+	##desc = changelings.1.d
+	##picture = GFX_event_swarm
+
+	##is_triggered_only = yes
+
+	##option = {
+	##	name = changelings.1.a
+	##	OLE = {
+	##		country_event = { days = 1 id = olenia.1 }
+	#3	}
+	##	ai_chance = { factor = 100 }
+	##}
+##}
+country_event = {
+	id = canterlot.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event canterlot.1"}
+	title = canterlot.1.t
+	desc = canterlot.1.d
+	#picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = canterlot.1.a
+		custom_effect_tooltip = release_canterlot_protectorate
+
+
+		hidden_effect = {
+			JCH = {
+				transfer_state = 101
+				transfer_state = 68
+				transfer_state = 3
+				transfer_state = 39
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 74
+				transfer_state = 177
+				transfer_state = 99
+			}
+			101 = { add_core_of = JCH }
+			68 = { add_core_of = JCH }
+			3 = { add_core_of = JCH }
+			39 = { add_core_of = JCH }
+			104 = { add_core_of = JCH }
+			103 = { add_core_of = JCH }
+			74 = { add_core_of = JCH }
+			177 = { add_core_of = JCH }
+			99 = { add_core_of = JCH }
+		}
+		JCH = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Generalmajor Jachs"
+					desc = ""
+					picture = "GovernorBrew.tga"
+					expire = "2020.22.7"
+					ideology = nazism
+					traits = {
+						
+					}
+				}
+			}
+		}
+		CHN = {
+			puppet = JCH
+		}
+		
+	}
+
+
+	option = {
+		name = canterlot.1.b
+		custom_effect_tooltip = release_canterlot_protectorate
+
+
+		hidden_effect = {
+			JCH = {
+				transfer_state = 101
+				transfer_state = 68
+				transfer_state = 3
+				transfer_state = 39
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 74
+				transfer_state = 177
+				transfer_state = 99
+			}
+			101 = { add_core_of = JCH }
+			68 = { add_core_of = JCH }
+			3 = { add_core_of = JCH }
+			39 = { add_core_of = JCH }
+			104 = { add_core_of = JCH }
+			103 = { add_core_of = JCH }
+			74 = { add_core_of = JCH }
+			177 = { add_core_of = JCH }
+			99 = { add_core_of = JCH }
+		}
+		JCH = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Generalmajor Jachs"
+					desc = ""
+					picture = "GovernorBrew.tga"
+					expire = "2020.22.7"
+					ideology = nazism
+					traits = {
+						
+					}
+				}
+			}
+		}
+		CHN = {
+			puppet = JCH
+		}
+		JCH = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = canterlot.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event canterlot.2"}
+	title = canterlot.2.t
+	desc = canterlot.2.d
+	#picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = canterlot.2.a
+		custom_effect_tooltip = release_canterlot_protectorate
+		hidden_effect = {
+			JCH = {
+				transfer_state = 101
+				transfer_state = 68
+				transfer_state = 3
+				transfer_state = 39
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 74
+				transfer_state = 177
+				transfer_state = 99
+				transfer_state = 2
+				transfer_state = 97
+				transfer_state = 327
+				transfer_state = 1
+				transfer_state = 5
+				transfer_state = 65
+			}
+			101 = { add_core_of = JCH }
+			68 = { add_core_of = JCH }
+			3 = { add_core_of = JCH }
+			39 = { add_core_of = JCH }
+			104 = { add_core_of = JCH }
+			103 = { add_core_of = JCH }
+			74 = { add_core_of = JCH }
+			177 = { add_core_of = JCH }
+			99 = { add_core_of = JCH }
+		}
+		JCH = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Generalmajor Jachs"
+					desc = ""
+					picture = "GovernorBrew.tga"
+					expire = "2020.22.7"
+					ideology = nazism
+					traits = {
+						
+					}
+				}
+			}
+		}
+		CHN = {
+			puppet = JCH
+		}
+
+		
+	}
+
+
+	option = {
+		name = canterlot.2.b
+		custom_effect_tooltip = release_canterlot_protectorate
+		hidden_effect = {
+			JCH = {
+				transfer_state = 101
+				transfer_state = 68
+				transfer_state = 3
+				transfer_state = 39
+				transfer_state = 104
+				transfer_state = 103
+				transfer_state = 74
+				transfer_state = 177
+				transfer_state = 99
+				transfer_state = 2
+				transfer_state = 97
+				transfer_state = 327
+				transfer_state = 1
+				transfer_state = 5
+				transfer_state = 65
+			}
+			101 = { add_core_of = JCH }
+			68 = { add_core_of = JCH }
+			3 = { add_core_of = JCH }
+			39 = { add_core_of = JCH }
+			104 = { add_core_of = JCH }
+			103 = { add_core_of = JCH }
+			74 = { add_core_of = JCH }
+			177 = { add_core_of = JCH }
+			99 = { add_core_of = JCH }
+		}
+		JCH = {
+			hidden_effect = {
+				create_country_leader = {
+					name = "Generalmajor Jachs"
+					desc = ""
+					picture = "GovernorBrew.tga"
+					expire = "2020.22.7"
+					ideology = nazism
+					traits = {
+						
+					}
+				}
+			}
+		}
+		CHN = {
+			puppet = JCH
+		}
+		JCH = {
+			change_tag_from = ROOT
+		}
+
+	}
+}
