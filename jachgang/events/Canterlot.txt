@@ -39,8 +39,7 @@ country_event = {
 				transfer_state = 39
 				transfer_state = 104
 				transfer_state = 103
-				transfer_state = 74
-				transfer_state = 177
+				transfer_state = 128
 				transfer_state = 99
 			}
 			101 = { add_core_of = JCH }
@@ -49,9 +48,8 @@ country_event = {
 			39 = { add_core_of = JCH }
 			104 = { add_core_of = JCH }
 			103 = { add_core_of = JCH }
-			74 = { add_core_of = JCH }
-			177 = { add_core_of = JCH }
 			99 = { add_core_of = JCH }
+			128 = { add_core_of = JCh }
 		}
 		JCH = {
 			hidden_effect = {
@@ -87,9 +85,8 @@ country_event = {
 				transfer_state = 39
 				transfer_state = 104
 				transfer_state = 103
-				transfer_state = 74
-				transfer_state = 177
 				transfer_state = 99
+				transfer_state = 128
 			}
 			101 = { add_core_of = JCH }
 			68 = { add_core_of = JCH }
@@ -97,9 +94,8 @@ country_event = {
 			39 = { add_core_of = JCH }
 			104 = { add_core_of = JCH }
 			103 = { add_core_of = JCH }
-			74 = { add_core_of = JCH }
-			177 = { add_core_of = JCH }
 			99 = { add_core_of = JCH }
+			128 = { add_core_of = JCH }
 		}
 		JCH = {
 			hidden_effect = {
@@ -144,8 +140,6 @@ country_event = {
 				transfer_state = 39
 				transfer_state = 104
 				transfer_state = 103
-				transfer_state = 74
-				transfer_state = 177
 				transfer_state = 99
 				transfer_state = 2
 				transfer_state = 97
@@ -153,6 +147,7 @@ country_event = {
 				transfer_state = 1
 				transfer_state = 5
 				transfer_state = 65
+				transfer_state = 128
 			}
 			101 = { add_core_of = JCH }
 			68 = { add_core_of = JCH }
@@ -160,9 +155,14 @@ country_event = {
 			39 = { add_core_of = JCH }
 			104 = { add_core_of = JCH }
 			103 = { add_core_of = JCH }
-			74 = { add_core_of = JCH }
-			177 = { add_core_of = JCH }
 			99 = { add_core_of = JCH }
+			2 = { add_core_of = JCH }
+			97 = { add_core_of = JCH }
+			327 = { add_core_of = JCH }
+			1 = { add_core_of = JCH }
+			5 = { add_core_of = JCH }
+			65 = { add_core_of = JCH }
+			128 = { add_core_of = JCH }
 		}
 		JCH = {
 			hidden_effect = {
@@ -197,8 +197,6 @@ country_event = {
 				transfer_state = 39
 				transfer_state = 104
 				transfer_state = 103
-				transfer_state = 74
-				transfer_state = 177
 				transfer_state = 99
 				transfer_state = 2
 				transfer_state = 97
@@ -206,6 +204,7 @@ country_event = {
 				transfer_state = 1
 				transfer_state = 5
 				transfer_state = 65
+				transfer_state = 128
 			}
 			101 = { add_core_of = JCH }
 			68 = { add_core_of = JCH }
@@ -213,9 +212,14 @@ country_event = {
 			39 = { add_core_of = JCH }
 			104 = { add_core_of = JCH }
 			103 = { add_core_of = JCH }
-			74 = { add_core_of = JCH }
-			177 = { add_core_of = JCH }
 			99 = { add_core_of = JCH }
+			2 = { add_core_of = JCH }
+			97 = { add_core_of = JCH }
+			327 = { add_core_of = JCH }
+			1 = { add_core_of = JCH }
+			5 = { add_core_of = JCH }
+			65 = { add_core_of = JCH }
+			128 = { add_core_of = JCH }
 		}
 		JCH = {
 			hidden_effect = {
