@@ -63,6 +63,7 @@ country_event = {
 						
 					}
 				}
+				country_event = { id = canterlot.3 days = 2 }
 			}
 		}
 		CHN = {
@@ -110,6 +111,8 @@ country_event = {
 						
 					}
 				}
+				country_event = { id = canterlot.3 days = 2 }
+
 			}
 		}
 		CHN = {
@@ -179,6 +182,8 @@ country_event = {
 						
 					}
 				}
+				country_event = { id = canterlot.3 days = 2 }
+
 			}
 		}
 		CHN = {
@@ -238,6 +243,8 @@ country_event = {
 						
 					}
 				}
+				country_event = { id = canterlot.3 days = 2 }
+
 			}
 		}
 		CHN = {
@@ -250,5 +257,35 @@ country_event = {
 		set_global_flag = CHN_JCH_made
 
 
+	}
+}
+
+country_event = {
+	id = canterlot.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event canterlot.3"}
+	title = canterlot.3.t
+	desc = canterlot.3.d
+
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = canterlot.3.a
+		hidden_effect = {
+			set_country_flag = JCH_confirm
+			add_to_variable = {
+				var = JCH_vops_influence
+				value = 67
+			}
+			add_to_variable = {
+				var = JCH_heer_influence
+				value = 33
+			}
+			add_to_variable = {
+				var = JCH_populace_influence
+				value = 14
+			}
+		}
 	}
 }

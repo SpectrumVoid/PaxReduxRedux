@@ -237,11 +237,12 @@ CHN_magical_equipment_4_short:0 "CAR.MIG-25"
 #FOCUS LOCALISATION
 
 
-#Event Loc
+##EVENT LOC
 canterlot.1.t:0 "The New Protectorate"
 canterlot.1.d:0 "Generalmajor Jachs entered the throne room in Vesalipolis, keeping a strict posture as he bowed before the Queen on the throne. He had been recalled back from Canterlot on short notice, something he had expected. It had been inevitable ever since he had sent that request to the capital. Chrysalis regarded him for a few moments before speaking.\n\n 'I have received your request about forming a Protectorate around Canterlot.' \n\n Jachs slowly nodded, choosing his words carefully. 'Your Majesty, there are still many resistance cells remaining across the Commissariat. I believe that with more autonomy, I would be able to more effectively-' \n\n 'I have already heard your reasoning in the request, Generalmajor.” Chrysalis frowned for a bit at him. “You have done much already in the service of the Hegemony, and succeeded in keeping Canterlot compliant and secure. Your request has already been approved, Protector.' \n\n 'But make no mistake,' she continued, staring Jachs down. 'This is only a temporary measure until the resistance is completely crushed. Canterlot is the crown jewel of Equestria, and it will not do to have others see it as anything other than an integral part of the Hegemony. I expect results from this. Do you understand?' \n\n Jachs nodded. 'Of course, your Majesty."
 canterlot.1.a:0 "Let's hope Jachs can do his job right"
 canterlot.1.b:0 "The clock begins ticking"
+
 canterlot.2.t:0 "The New Protectorate"
 canterlot.2.d:0 "Generalmajor Jachs entered the throne room in Vesalipolis, keeping a strict posture as he bowed before the Queen on the throne. He had been recalled back from Canterlot on short notice, something he had expected. It had been inevitable ever since he had sent that request to the capital. Chrysalis regarded him for a few moments before speaking.\n\n 'I have received your request about forming a Protectorate around Canterlot.' \n\n Jachs slowly nodded, choosing his words carefully. 'Your Majesty, there are still many resistance cells remaining across the Commissariat. I believe that with more autonomy, I would be able to more effectively-' \n\n 'I have already heard your reasoning in the request, Generalmajor.” Chrysalis frowned for a bit at him. “You have done much already in the service of the Hegemony, and succeeded in keeping Canterlot compliant and secure. Your request has already been approved, Protector.' \n\n 'But make no mistake,' she continued, staring Jachs down. 'This is only a temporary measure until the resistance is completely crushed. Canterlot is the crown jewel of Equestria, and it will not do to have others see it as anything other than an integral part of the Hegemony. I expect results from this. Do you understand?' \n\n Jachs nodded. 'Of course, your Majesty."
 canterlot.2.a:0 "Let's hope Jachs can do his job right"
@@ -249,6 +250,13 @@ canterlot.2.b:0 "The clock begins ticking"
 
 
 
+##DECISION LOC
+JCH_Timer_Category:0 "The Ticking Clock"
+JCH_Timer_Category_desc:0 "The Queen has made it obvious that the Protectorate is not meant to last, Jachs is working on borrowed time in order to bring about his visions to Canterlot..."
+JCH_Death_Timer:0 "The Clock Ticks..."
+JCH_VOPS_Influence:0 "Vesapolis Influence in the Protectorate is currently at [?JCH_vops_influence]%!"
+JCH_Heer_Influence:0 "The Heer's Influence in the Protectorate is currently at [?JCH_heer_influence]%!"
+JCH_Populace_Influence:0 "[?JCH_populace_support]% of the populace currently supports the administration."
 #Tooltip Loc
 
 #Flag Loc

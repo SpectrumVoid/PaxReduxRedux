@@ -36,3 +36,88 @@ JCH_Timer_Category = {
 			}
 		}
 	}
+
+	JCH_VOPS_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			has_country_flag = JCH_confirm
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+	JCH_Heer_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			has_country_flag = JCH_confirm
+
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+	JCH_Populace_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			has_country_flag = JCH_confirm
+
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+}
