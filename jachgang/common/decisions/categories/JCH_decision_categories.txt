@@ -1,0 +1,9 @@
+JCH_Timer_Category = {
+	icon = generic_monarchism
+	allowed = {
+		original_tag = JCH
+	}
+	priority = {
+		base = 200
+	}
+}
