@@ -1,0 +1,29 @@
+JCH_love_tax_category = {
+	icon = manehattan_love_tax
+	
+	scripted_gui = JCH_lovetax_erot_display_container_gui	
+	
+	allowed = {
+		original_tag = JCH
+	}
+	visible = {
+		tag = JCH
+	}
+	priority = {
+		base = 95
+	}
+}
+JCH_suspicion_level_category = {
+	icon = manehattan_love_tax
+	
+	
+	allowed = {
+                tag = JCH
+	}
+	visible = {
+		tag = JCH
+	}
+	priority = {
+		base = 95
+	}
+}

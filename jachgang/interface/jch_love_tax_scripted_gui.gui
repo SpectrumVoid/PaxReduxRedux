@@ -1,0 +1,49 @@
+guiTypes = {
+	containerWindowType = {
+		name = "JCH_lovetax_erot_display_container"
+		position = { x = 0 y = 0 }
+		size = { width = 150% height = 25 }
+		Orientation = upper_left
+		
+		instantTextBoxType = {
+			name ="JCH_lovetax_erot_display_text_words"
+			position = { x = 12 y = 5 }
+			font = "hoi_16mbs"
+			text = "[JCH_scripted_loc_key_for_love_text_words]"
+			format = left
+			maxWidth = 420
+		}
+		
+		iconType ={
+			name ="JCH_lovetax_erot_display_button_icontype"
+			spriteType = "GFX_generic_box_125"
+			position = { x=125 y=0 }
+			
+			pdx_tooltip = "JCH_current_amount_of_erots_stored_tt"
+			pdx_tooltip_delayed = "JCH_current_amount_of_erots_stored_longer_explainer_tt"
+		}
+		
+		iconType = {
+			name ="JCH_lovetax_erot_icon"
+			spriteType = "GFX_lovetax_text"
+			position = { x= 130 y = 2 }
+			
+			pdx_tooltip = "JCH_current_amount_of_erots_stored_tt"
+			pdx_tooltip_delayed = "JCH_current_amount_of_erots_stored_longer_explainer_tt"
+		}
+		
+		instantTextBoxType = {
+			name ="JCH_lovetax_erot_display_text"
+			position = { x = 155 y = 5 }
+			font = "hoi_16mbs"
+			text = "[JCH_scripted_loc_key_for_love_top_bar]"
+			format = right
+			maxWidth = 80
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "JCH_current_amount_of_erots_stored_tt"
+			pdx_tooltip_delayed = "JCH_current_amount_of_erots_stored_longer_explainer_tt"
+		}
+	}
+	

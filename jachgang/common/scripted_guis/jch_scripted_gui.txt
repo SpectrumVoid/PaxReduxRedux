@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	JCH_lovetax_erot_display_container_gui = {
+		context_type = decision_category
+		parent_window_token = decision_tab
+		
+		window_name = "JCH_lovetax_erot_display_container"
+		
+		visible = {
+			original_tag = JCH
+		}
+	}
+			
+		## the tooltips in the .gui file would be these: ##
+		## pdx_tooltip = "MAN_click_this_button_for_love_tt" ##
+		## pdx_tooltip_delayed = "MAN_click_this_button_for_love_longer_explainer_tt" ##
+	}
+	

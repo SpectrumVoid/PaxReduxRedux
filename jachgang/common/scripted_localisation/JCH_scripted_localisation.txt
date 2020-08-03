@@ -1,0 +1,270 @@
+defined_text = {
+	name = GetDecisionCostLove2PP30
+	text = {
+		trigger = {
+			has_political_power > 29
+			check_variable = { JCH_lovetax_variable > 1.99 }
+		}
+		localization_key = decision_cost_pp_30_love_2
+	}
+	text = {
+		localization_key = decision_cost_pp_30_love_2_blocked
+	}
+}
+
+defined_text = {
+	name = GetDecisionCostLove1PP30
+	text = {
+		trigger = {
+			has_political_power > 29
+			check_variable = { JCH_lovetax_variable > 0.99 }
+		}
+		localization_key = decision_cost_pp_30_love_1
+	}
+	text = {
+		localization_key = decision_cost_pp_30_love_1_blocked
+	}
+}
+
+defined_text = {
+	name = GetDecisionCostLove15PP30
+	text = {
+		trigger = {
+			has_political_power > 29
+			check_variable = { JCH_lovetax_variable > 1.49 }
+		}
+		localization_key = decision_cost_pp_30_love_15
+	}
+	text = {
+		localization_key = decision_cost_pp_30_love_15_blocked
+	}
+}
+
+defined_text = {
+	name = GetDecisionCostLove075PP30
+	text = {
+		trigger = {
+			has_political_power > 29
+			if = {
+				limit = { original_tag = JCH }
+				check_variable = { JCH_lovetax_variable > 0.74 }
+			}
+			if = {
+				limit = { original_tag = CHN }
+				check_variable = { CHN_love_variable > 0.74 }
+			}
+		}
+		localization_key = decision_cost_pp_30_love_075
+	}
+	text = {
+		localization_key = decision_cost_pp_30_love_075_blocked
+	}
+}
+
+defined_text = {
+	name = GetDecisionCostLove05PP30
+	text = {
+		trigger = {
+			has_political_power > 29
+			if = {
+				limit = { original_tag = JCH }
+				check_variable = { JCH_lovetax_variable > 0.49 }
+			}
+			if = {
+				limit = { original_tag = CHN }
+				check_variable = { CHN_love_variable > 0.49 }
+			}
+		}
+		localization_key = decision_cost_pp_30_love_05
+	}
+	text = {
+		localization_key = decision_cost_pp_30_love_05_blocked
+	}
+}
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_tax_sucking
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_tax_sucking_country_flag
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_displayed
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_not_displayed
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_tax_sucking_1
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_tax_sucking_country_flag
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_displayed_1
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_not_displayed_1
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_tax_sucking_2
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_tax_sucking_country_flag
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_displayed_2
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_tax_sucking_variable_not_displayed_2
+	}
+}
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_distribution_2
+	text = {
+		trigger = {
+			check_variable = {
+				var = JCH_lovetax_variable
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_2_availability_green_tt
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_2_availability_yellow_tt
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_distribution
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_distribution_country_flag
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_variable_displayed
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_variable_not_displayed
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_continuous_love_distribution_1
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_distribution_country_flag
+			check_variable = {
+				var = JCH_continuous_love_distribution_stab_var
+				value = 0.005
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_variable_displayed_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JCH_continuous_love_distribution_country_flag
+			check_variable = {
+				var = JCH_continuous_love_distribution_stab_var
+				value = 0.005
+				compare = less_than
+			}
+		}
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_variable_negligible_1
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_continuous_love_distribution_variable_not_displayed_1
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_dynamic_love_modifier
+	text = {
+		trigger = {
+			has_country_flag = JCH_unlocked_dynamic_modifier_flag
+			check_variable = {
+				var = JCH_lovetax_variable
+				value = 0.1
+				compare = less_than
+			}
+		}
+		localization_key = JCH_scripted_loc_for_dynamic_love_modifier_tt
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_for_dynamic_love_modifier_1
+	text = {
+		trigger = {
+			has_country_flag = JCH_unlocked_dynamic_modifier_flag
+		}
+		localization_key = JCH_scripted_loc_for_dynamic_love_modifier_1_a_tt
+	}
+	text = {
+		localization_key = JCH_scripted_loc_for_dynamic_love_modifier_1_b_tt
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_key_for_love_top_bar
+	text = {
+		localization_key = JCH_scripted_loc_key_for_love_top_bar_text
+	}
+}
+
+defined_text = {
+	name = JCH_scripted_loc_key_for_love_text_words
+	text = {
+		localization_key = JCH_scripted_loc_key_for_love_text_words_text
+	}
+}
+defined_text = {
+	name = MAN_lovetax_button_action_prep_time
+	text = {
+		trigger = {
+			check_variable = {
+				var = MAN_lovetax_button_action_prep_time_variable
+				value = 30
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MAN_lovetax_button_action_prep_time_tick
+	}
+	text = {
+		localization_key = MAN_lovetax_button_action_prep_time_cross
+	}
+}
+
+defined_text = {
+	name = MAN_lovetax_button_action_stab_factor
+	text = {
+		trigger = {
+			has_stability > 0.199
+		}
+		localization_key = MAN_lovetax_button_action_stab_factor_tick
+	}
+	text = {
+		localization_key = MAN_lovetax_button_action_stab_factor_cross
+	}
+}
+
+defined_text = { # Suspicion Levels
+	name = JCHSuspicionLevels
+	text = {
+		trigger = {
+		check_variable = {
+		var = JCH_suspicion_var
+		value = 0.2
+		compare = less_than
+		}
+	}
+		localization_key = JCH_sus_var_1
+	}
+	text = {
+		trigger = {
+			check_variable = { JCH_suspicion_var < 0.4 }
+			check_variable = { JCH_suspicion_var > 0.2 }
+		}
+		localization_key = JCH_sus_var_2
+	}

@@ -1,0 +1,16 @@
+add_cores_JCH = {
+	101 = { add_core_of = JCH }
+	68 = { add_core_of = JCH }
+	3 = { add_core_of = JCH }
+	39 = { add_core_of = JCH }
+	104 = { add_core_of = JCH }
+	103 = { add_core_of = JCH }
+	99 = { add_core_of = JCH }
+	2 = { add_core_of = JCH }
+	97 = { add_core_of = JCH }
+	327 = { add_core_of = JCH }
+	1 = { add_core_of = JCH }
+	5 = { add_core_of = JCH }
+	65 = { add_core_of = JCH }
+	128 = { add_core_of = JCH }
+}
