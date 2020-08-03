@@ -254,7 +254,7 @@ canterlot.2.b:0 "The clock begins ticking"
 JCH_Timer_Category:0 "The Ticking Clock"
 JCH_Timer_Category_desc:0 "The Queen has made it obvious that the Protectorate is not meant to last, Jachs is working on borrowed time in order to bring about his visions to Canterlot..."
 JCH_Death_Timer:0 "The Clock Ticks..."
-JCH_VOPS_Influence:0 "Vesapolis Influence in the Protectorate is currently at [?JCH_vops_influence]%!"
+JCH_VOPS_Influence:0 "Loyalist Influence in the Protectorate is currently at [?JCH_vops_influence]%!"
 JCH_Heer_Influence:0 "The Heer's Influence in the Protectorate is currently at [?JCH_heer_influence]%!"
 JCH_Populace_Influence:0 "[?JCH_populace_support]% of the populace currently supports the administration."
 #Tooltip Loc
