@@ -52,7 +52,7 @@ JCH_Timer_Category = {
 		visible = {
 			tag = JCH
 			has_global_flag = CHN_JCH_made
-			has_country_flag = JCH_confirm
+			#has_country_flag = JCH_confirm
 		}
 
 		cancel_if_not_visible = yes
@@ -79,7 +79,7 @@ JCH_Timer_Category = {
 		visible = {
 			tag = JCH
 			has_global_flag = CHN_JCH_made
-			has_country_flag = JCH_confirm
+			#has_country_flag = JCH_confirm
 
 		}
 
@@ -107,7 +107,7 @@ JCH_Timer_Category = {
 		visible = {
 			tag = JCH
 			has_global_flag = CHN_JCH_made
-			has_country_flag = JCH_confirm
+			#has_country_flag = JCH_confirm
 
 		}
 
