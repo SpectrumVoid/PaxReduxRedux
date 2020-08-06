@@ -1,3 +1,13 @@
+JCH_Timer_Category = {
+	icon = generic_monarchism
+	allowed = {
+		original_tag = JCH
+	}
+	priority = {
+		base = 200
+	}
+}
+
 JCH_love_tax_category = {
 	icon = manehattan_love_tax
 	

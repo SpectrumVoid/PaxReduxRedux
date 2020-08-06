@@ -757,3 +757,126 @@ JCH_suspicion_level_category = {
 			factor = 0
 		}
 	}
+
+JCH_Timer_Category = {
+
+	JCH_Death_Timer = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 565
+
+		fire_only_once = yes
+
+		activation = {
+			has_global_flag = CHN_JCH_made
+		}
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			CHN = {
+				annex_country = {
+					target = JCH transfer_troops = yes
+				}
+			}
+		}
+	}
+
+	JCH_VOPS_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			#has_country_flag = JCH_confirm
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+	JCH_Heer_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			#has_country_flag = JCH_confirm
+
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+	JCH_Populace_Influence = {
+		priority = 10 
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = yes
+
+
+		visible = {
+			tag = JCH
+			has_global_flag = CHN_JCH_made
+			#has_country_flag = JCH_confirm
+
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		completion_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
+		}
+	}
+
+}
