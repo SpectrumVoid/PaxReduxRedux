@@ -23,6 +23,7 @@ JCH_love_tax_category = {
 		base = 95
 	}
 }
+
 JCH_suspicion_level_category = {
 	icon = manehattan_love_tax
 	

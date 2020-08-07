@@ -738,6 +738,7 @@ JCH_love_tax_category = {
 			}
 		}
 	}
+
 JCH_suspicion_level_category = {
 	JCH_suspicion_level = { 
 		icon = generic_research
@@ -757,6 +758,7 @@ JCH_suspicion_level_category = {
 			factor = 0
 		}
 	}
+}	
 
 JCH_Timer_Category = {
 

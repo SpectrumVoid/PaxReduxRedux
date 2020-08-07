@@ -45,6 +45,7 @@ country_event = {
 			release_puppet = JCH
 			JCH = {
 				hidden_effect = {
+					set_global_flag = CHN_JCH_made
 					set_country_flag = is_changeling_puppet
 					load_focus_tree = canterlot_protectorate
 					create_country_leader = {
@@ -113,6 +114,7 @@ country_event = {
 			factor = 0
 		}
 		hidden_effect = {
+			set_global_flag = CHN_JCH_made
 			add_cores_JCH = yes
 			release_puppet = JCH
 			JCH = {
