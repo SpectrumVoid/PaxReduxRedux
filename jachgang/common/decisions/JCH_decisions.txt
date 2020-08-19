@@ -131,7 +131,7 @@ JCH_love_tax_category = {
 			hidden_effect = {
 				activate_mission = JCH_paying_the_love_tax
 				remove_ideas = JCH_not_pay_love_tax
-				add_ideas = JCH_ahh_i_hate_comiing_up_with_these_names
+				add_ideas = JCH_ahh_i_hate_coming_up_with_these_names
 				CHN = { add_ideas = JCH_lovetax_new_chn_benefits }
 			}
 		}
@@ -738,7 +738,7 @@ JCH_love_tax_category = {
 			}
 		}
 	}
-
+}
 JCH_suspicion_level_category = {
 	JCH_suspicion_level = { 
 		icon = generic_research
@@ -760,6 +760,8 @@ JCH_suspicion_level_category = {
 	}
 }	
 
+}
+
 JCH_Timer_Category = {
 
 	JCH_Death_Timer = {
@@ -777,12 +779,12 @@ JCH_Timer_Category = {
 		fire_only_once = yes
 
 		activation = {
-			has_global_flag = CHN_JCH_made
+			has_country_flag = CHN_JCH_made
 		}
 
 		visible = {
 			tag = JCH
-			has_global_flag = CHN_JCH_made
+			has_country_flag = CHN_JCH_made
 		}
 
 		cancel_if_not_visible = yes
@@ -812,7 +814,7 @@ JCH_Timer_Category = {
 
 		visible = {
 			tag = JCH
-			has_global_flag = CHN_JCH_made
+			has_country_flag = CHN_JCH_made
 			#has_country_flag = JCH_confirm
 		}
 
@@ -839,7 +841,7 @@ JCH_Timer_Category = {
 
 		visible = {
 			tag = JCH
-			has_global_flag = CHN_JCH_made
+			has_country_flag = CHN_JCH_made
 			#has_country_flag = JCH_confirm
 
 		}
@@ -867,8 +869,7 @@ JCH_Timer_Category = {
 
 		visible = {
 			tag = JCH
-			has_global_flag = CHN_JCH_made
-			#has_country_flag = JCH_confirm
+			has_country_flag = CHN_JCH_made
 
 		}
 

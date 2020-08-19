@@ -25,9 +25,6 @@ country_event = {
 			CHN = {
 				set_country_flag = released_canterlot_puppet
 			}
-			JCH = {
-
-			}
 		}
 	}
 	title = canterlot.1.t
@@ -106,6 +103,9 @@ country_event = {
 				JCH = { transfer_technology = yes }
 				add_ideas = MAN_the_love_tax_CHN_buffs
 			}
+			JCH = {
+				country_event = {id = canterlot.2 days = 10 }
+			}
 		}
 	}
 	option = {
@@ -181,6 +181,9 @@ country_event = {
 				add_ideas = MAN_the_love_tax_CHN_buffs
 			}
 			ROOT = { goto_state = 75 }
+			JCH = {
+				country_event = {id = canterlot.2 days = 10 }
+			}
 		}
 		JCH = {
 			change_tag_from = ROOT
@@ -189,3 +192,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = canterlot.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event canterlot.2"}
+	title = canterlot.2.t
+	desc = canterlot.2.d
+
+	#picture = 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = canterlot.2.a
+		set_country_flag = CHN_JCH_made
+	}
+
+}

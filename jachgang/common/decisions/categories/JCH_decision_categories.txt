@@ -29,10 +29,11 @@ JCH_suspicion_level_category = {
 	
 	
 	allowed = {
-                tag = JCH
+        tag = JCH
 	}
 	visible = {
 		tag = JCH
+		has_country_flag = CHN_JCH_made
 	}
 	priority = {
 		base = 95
