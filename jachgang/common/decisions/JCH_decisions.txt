@@ -784,12 +784,9 @@ JCH_Timer_Category = {
 
 		visible = {
 			tag = JCH
-			has_country_flag = CHN_JCH_made
 		}
 
-		cancel_if_not_visible = yes
-
-		is_good = yes
+		cancel_if_not_visible = no
 
 		timeout_effect = {
 			CHN = {

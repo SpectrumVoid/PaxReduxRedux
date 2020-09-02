@@ -222,3 +222,14 @@ country_event = {
 	}
 
 }
+
+country_event = {
+	id = canterlot.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event canterlot.3"}
+	title = canterlot.3.t
+	desc = canterlot.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+	}
+}

@@ -1,0 +1,41 @@
+JCH_increase_loyalist = {
+	add_to_variable = {
+		var = JCH_vops_influence
+		value = 5
+	}	
+}
+
+JCH_decrease_loyalist = {
+	subtract_from_variable = {
+		var = JCH_vops_influence
+		value = 5
+	}
+}
+
+JCH_increase_heer = {
+	add_to_variable = {
+		var = JCH_heer_influence
+		value = 5
+	}
+}
+
+JCH_decrease_heer = {
+	subtract_from_variable = {
+		var = JCH_heer_influence
+		value = 5
+	}
+}
+
+JCH_increase_population = {
+	add_to_variable = {
+		var = JCH_populace_support
+		value = 5
+	}
+}
+
+JCH_decrease_population = {
+	subtract_from_variable = {
+		var = JCH_populace_support
+		value = 5
+	}
+}

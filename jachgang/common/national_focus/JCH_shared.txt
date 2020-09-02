@@ -1,647 +1,129 @@
-focus_tree = {
-	id = canterlot_protectorate
-	country = {
+#shared_focus = {
+	#id = 
+	#icon = GFX_goal_chn_swords
+	#cost = 10.00
+	#available = {
+	#}
+	#ai_will_do = {
+	#		factor = 200
+	#}
+	#x = 20
+	#y = 0
+	#completion_reward = {
+		#log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
+
+	#}
+
+
+##Centrist - eww- Focuses, in total only 8 70 days focuses can be done. Current Total : 19 . Max = 80##
+
+
+
+shared_focus = {
+	id = JCH_unfortunate_reality
+	#icon = 
+	cost = 4
+	mutually_exclusive = {
+		focus = JCH_reformism
+	}
+	ai_will_do = {
+		factor = 200
+	}
+	x = 25 
+	y = 0 
+
+	completion_reward = {
+		log = "[GetDateText]:[Root.GetName]: focus JCH_unfortunate_reality"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.05
+		}
+	}
+
+}
+
+shared_focus = {
+	id = JCH_increase_love_regulations
+	#icon = 
+	cost = 10
+	prerequisite = {
+		id = JCH_unfortunate_reality
+	}
+	ai_will_do = {
+		factor = 199
+	}
+	x = 24
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_increase_love_regulations"
+		add_ideas = JCH_increased_regulations
+		JCH_increase_loyalist = yes
+		JCH_increase_population = yes
+		JCH_decrease_heer = yes
+	}
+}
+
+shared_focus = {
+	id = JCH_new_homes
+	#icon = 
+	cost = 7
+	prerequisite = {
+		id = JCH_unfortunate_reality
+	}
+	ai_will_do = {
+		factor = 199
+	}
+	x = 26
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_new_homes"
+		##Add effects of more population
+	}
+}
+
+shared_focus = {
+	id = JCH_health_benefits
+	#icon = 
+	cost = 8
+	prerequisite = {
+		focus = JCH_increase_love_regulations
+		focus = JCH_new_homes
+	}
+	ai_will_do = {
+		factor = 198
+	}
+	x = 25
+	y = 2 
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_health_benefits"
+		##COOL, HEALTH!
+	}
+}
+
+
+##Reformist##
+
+shared_focus = {
+	id = JCH_reformism
+	#icon = 
+	cost = 7
+	mutually_exclusive = {
+		focus = JCH_unfortunate_reality
+	}
+	ai_will_do = {
 		factor = 0
-		modifier = {
-			add = 20
-			tag = JCH
+	}
+	x = 5
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_reformism"
+		country_event = {
+			id = canterlot.3 hours = 10
 		}
 	}
-	default = no
-	continuous_focus_position = { x = 2700 y = 1350 }
-
-           focus = {
-		id = JCH_protectorate
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 20
-		y = 0
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-
-	focus = {
-		id = JCH_reformism
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 14
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_further_influence_with_vops
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_reformism
-		}
-		relative_position_id = JCH_reformism
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = -6
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_canterlot_counter_intelligence
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_further_influence_with_vops
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_canterlot_spy_network
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_canterlot_counter_intelligence
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 2
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_changeling_government_collaborators
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_canterlot_spy_network
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_secret_arms_shipment
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_changeling_government_collaborators
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_protectorate_neutrality
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_secret_arms_shipment
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_complete_vops_support
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate_neutrality
-		}
-		relative_position_id = JCH_further_influence_with_vops
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 6
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_pony_rebuilding
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_reformism
-		}
-		relative_position_id = JCH_reformism
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = -2
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_use_96th_to_improve_infrastructure
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_reformism
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_put_ponies_to_work_in_civilian
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_use_96th_to_improve_infrastructure
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 2
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_put_ponies_to_work_in_military
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_put_ponies_to_work_in_civilian
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_train_pony_militia
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_put_ponies_to_work_in_military
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_integrated_recruitment
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_train_pony_militia
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_complete_pony_support
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_integrated_recruitment
-		}
-		relative_position_id = JCH_pony_rebuilding
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 6
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_heer_recruitment
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_reformism
-		}
-		relative_position_id = JCH_reformism
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 2
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_ensure_96th_loyalty
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_heer_recruitment
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_broaden_heer_support
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_ensure_96th_loyalty
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 2
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_recruit_heer_armoured_divisions
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_broaden_heer_support
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_recruit_air_force_divisions
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_recruit_heer_armoured_divisions
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_recruit_heer_officers
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_recruit_air_force_divisions
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_heer_mutiny
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_recruit_heer_officers
-		}
-		relative_position_id = JCH_heer_recruitment
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 6
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_alliances
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_reformism
-		}
-		relative_position_id = JCH_reformism
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 6
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_trade_deal_with_lilac
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_alliances
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_protectorate_trade_sphere
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_trade_deal_with_lilac
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 2
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_protectorate_research_agreement
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate_trade_sphere
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_protectorate_leadership_from_canterlot
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate_research_agreement
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 4
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_greater_protectorate_autonomy
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate_leadership_from_canterlot
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_greater_unified_protectorate_front
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_greater_protectorate_autonomy
-		}
-		relative_position_id = JCH_alliances
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 6
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_centrism
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_protectorate
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 26
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
-	focus = {
-		id = JCH_mediocre_reforms
-		icon = GFX_goal_chn_swords
-		cost = 10.00
-		prerequisite = {
-			focus = JCH_centrism
-		}
-		relative_position_id = JCH_centrism
-		available = {
-		}
-		ai_will_do = {
-			factor = 200
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
-
-		}
-	}
+}
