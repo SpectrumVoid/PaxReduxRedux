@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 2700 y = 1350 }
 
-        focus = {
+    focus = {
 		id = nothing_much_to_do
 		icon = GFX_goal_chn_spy
 		cost = 10.00
@@ -27,10 +27,10 @@ focus_tree = {
 				limit = {
 				has_dlc = "La Resistance"
 				}
-			add_ideas = VOP_good_codes_lar
+				add_ideas = VOP_good_codes_lar
 			}
 			else = {
-			add_ideas = VOP_good_codes
+				add_ideas = VOP_good_codes
 			}
 
 		}

@@ -3,6 +3,27 @@
  CHN_vops_protectorate:0 "Form the VOPS State"
  CHN_vops_protectorate.t:0 "Form the VOPS State"
 
+ ### COUNTRYNAME ###
+ VOP_fascism:0 "The VOPS State"
+ VOP_fascism_DEF:0 "The VOPS State"
+ VOP_democratic:0 "The Kind VOPS State"
+ JCH_democratic_DEF:0 "The Kind VOPS State"
+ JCH_neutrality:0 "The VOPS State"
+ JCH_neutrality_DEF:0 "The VOPS State"
+ JCH_communism:0 "Our VOPS State"
+ JCH_communism_DEF:0 "Our VOPS State"
+ JCH_communism_ADJ:0 "VOPS"
+ JCH_democratic_ADJ:0 "VOPS"
+ JCH_neutrality_ADJ:0 "VOPS"
+ JCH_fascism_ADJ:0 "VOPS"
+
+ ### Ideas ###
+ VOP_good_codes_lar:0 "Superior Encryption"
+ VOP_good_codes:0 "Superior Encryption"
+
+ ### Foci ###
+ nothing_much_to_do:0 "Getting Affairs in Order"
+ nothing_much_to_do_desc:0 "Until our plans come to fruition, the VOPS State will function merely as a cryptography and cryptanalysis department."
  ### Parties ###
  VOP_collaborators:0 "Collaborators"
  VOP_collaborators_long:0 "Collaborators Cooperating with the State"

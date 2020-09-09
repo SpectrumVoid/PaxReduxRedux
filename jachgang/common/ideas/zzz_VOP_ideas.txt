@@ -11,7 +11,7 @@ ideas = {
 	
 			removal_cost = -1
 	
-			picture = FRA_scw_intervention_republicans_focus
+			picture = CHN_decentralised_fear
 	
 			modifier = {
 				crypto_strength = 1
@@ -28,7 +28,7 @@ ideas = {
 	
 			removal_cost = -1
 	
-			picture = FRA_scw_intervention_republicans_focus
+			picture = CHN_decentralised_fear
 	
 			modifier = {
 				encryption = 1
