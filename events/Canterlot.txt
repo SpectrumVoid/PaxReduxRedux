@@ -1,0 +1,235 @@
+﻿add_namespace = canterlot
+
+###country_event = {   ######### Talk about Olenian Territories ######
+	##id = changelings.1
+	##immediate = {log = "[GetDateText]: [Root.GetName]: event ##changelings.1"}
+	##title = changelings.1.t
+	##desc = changelings.1.d
+	##picture = GFX_event_swarm
+
+	##is_triggered_only = yes
+
+	##option = {
+	##	name = changelings.1.a
+	##	OLE = {
+	##		country_event = { days = 1 id = olenia.1 }
+	#3	}
+	##	ai_chance = { factor = 100 }
+	##}
+##}
+country_event = {
+	id = canterlot.1
+	immediate = { 
+		log = "[GetDateText]: [Root.GetName]: event canterlot.1" 
+		hidden_effect = {
+			CHN = {
+				set_country_flag = released_canterlot_puppet
+			}
+		}
+	}
+	title = canterlot.1.t
+	desc = canterlot.1.d
+	picture = GFX_event_lilac
+	is_triggered_only = yes
+	
+	option = {
+		name = canterlot.1.a
+		ai_chance = { 
+			factor = 1
+		}
+		hidden_effect = {
+			add_cores_JCH = yes
+			release_puppet = JCH
+			JCH = {
+				hidden_effect = {
+					set_global_flag = CHN_JCH_made
+					set_country_flag = is_changeling_puppet
+					load_focus_tree = canterlot_protectorate
+					create_country_leader = {
+						name = "Generalmajor Jachs"
+						desc = "JACHS_DESC"
+						picture = "Lilac.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+							the_generalmajor
+						}
+					}
+				}
+				create_corps_commander = {
+					name = "Jachs"
+					desc = "JACHS_GENERAL_DESC"
+					portrait_path = "gfx/leaders/MAN/Lilac.tga"
+					traits = { MAN_ost_kommando_officer skilled_staffer trait_engineer changeling_race_trait }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+					female = no
+					id = 99805
+				}				
+				add_popularity = {
+					ideology = fascism
+					popularity = 1
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+				set_party_name = { 
+					ideology = neutrality 
+					name = JCH_collaborator_establishment
+					long_name = JCH_collaborator_establishment_long
+				}
+				set_party_name = { 
+					ideology = fascism 
+					name = JCH_changeling_administration
+					long_name = JCH_changeling_administration_long 
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = JCH_e_l_f
+					name = JCH_e_l_f 
+				}
+				load_oob = "MAN_CHN_garrison"
+				add_manpower = -30000
+				set_war_support = 0.05
+				add_ideas = MAN_advisor_2
+				add_ideas = changeling_garrison 
+				add_ideas = MAN_autonomous_puppet_state
+			}
+			CHN = {
+				JCH = { transfer_technology = yes }
+				add_ideas = MAN_the_love_tax_CHN_buffs
+			}
+			JCH = {
+				country_event = {id = canterlot.2 days = 10 }
+			}
+		}
+	}
+	option = {
+		name = canterlot.1.b
+		ai_chance = { 
+			factor = 0
+		}
+		hidden_effect = {
+			set_global_flag = CHN_JCH_made
+			add_cores_JCH = yes
+			release_puppet = JCH
+			JCH = {
+				hidden_effect = {
+					set_country_flag = is_changeling_puppet
+					load_focus_tree = canterlot_protectorate
+					create_country_leader = {
+						name = "Generalmajor Jachs"
+						desc = "JACHS_DESC"
+						picture = "Lilac.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+							the_generalmajor 
+						}
+					}
+					set_country_flag = JCH_player_select
+				}
+				create_corps_commander = { 
+					name = "Jachs"
+					desc = "JACHS_GENERAL_DESC"
+					portrait_path = "gfx/leaders/MAN/Lilac.tga"
+					traits = { MAN_ost_kommando_officer skilled_staffer trait_engineer changeling_race_trait }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+					female = no
+					id = 99805
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+				set_party_name = { 
+					ideology = neutrality 
+					name = JCH_collaborator_establishment 
+					long_name = JCH_collaborator_establishment_long 
+				}
+				set_party_name = { 
+					ideology = fascism 
+					name = JCH_changeling_administration
+					long_name = JCH_changeling_administration_long 
+				}
+				set_party_name = { 
+					ideology = democratic 
+					name = JCH_e_l_f
+					long_name = JCH_e_l_f 
+				}
+				load_oob = "MAN_CHN_garrison"
+				add_manpower = -30000
+				set_war_support = 0.05
+				add_ideas = MAN_advisor_2
+				add_ideas = changeling_garrison 
+				add_ideas = MAN_autonomous_puppet_state
+			}
+			CHN = {
+				JCH = { transfer_technology = yes }
+				add_ideas = MAN_the_love_tax_CHN_buffs
+			}
+			ROOT = { goto_state = 75 }
+			JCH = {
+				country_event = {id = canterlot.2 days = 10 }
+			}
+		}
+		JCH = {
+			change_tag_from = ROOT
+		}
+		custom_effect_tooltip = JCH_must_select_this_option_for_player
+	}
+}
+
+country_event = {
+	id = canterlot.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event canterlot.2"}
+	title = canterlot.2.t
+	desc = canterlot.2.d
+
+	#picture = 
+
+	is_triggered_only = yes 
+
+	option = {
+		name = canterlot.2.a
+		set_country_flag = CHN_JCH_made
+		hidden_effect = {
+			add_to_variable = {
+				var = JCH_vops_influence
+				value = 54
+			}
+			add_to_variable = {
+				var = JCH_heer_influence
+				value = 24
+			}
+			add_to_variable = {
+				var = JCH_populace_support
+				value = 19
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = canterlot.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event canterlot.3"}
+	title = canterlot.3.t
+	desc = canterlot.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+	}
+}
