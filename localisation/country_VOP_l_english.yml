@@ -17,6 +17,12 @@
  JCH_neutrality_ADJ:0 "VOPS"
  JCH_fascism_ADJ:0 "VOPS"
 
+ ### Events ###
+ vops.1,t:0 "The VOPS State"
+ vops.1.d:0 "Vaspier has requested the tiny village of Our Town to establish a cryptography facility. There isn't any real reason to refuse his offer."
+ vops.1.a:0 "Sure I guess."
+ vops.1.b:0 "Time to do some codebreaking."
+
  ### Ideas ###
  VOP_good_codes_lar:0 "Superior Encryption"
  VOP_good_codes:0 "Superior Encryption"
