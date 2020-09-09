@@ -1,0 +1,201 @@
+﻿add_namespace = vops
+
+###country_event = {   ######### Talk about Olenian Territories ######
+	##id = changelings.1
+	##immediate = {log = "[GetDateText]: [Root.GetName]: event ##changelings.1"}
+	##title = changelings.1.t
+	##desc = changelings.1.d
+	##picture = GFX_event_swarm
+
+	##is_triggered_only = yes
+
+	##option = {
+	##	name = changelings.1.a
+	##	OLE = {
+	##		country_event = { days = 1 id = olenia.1 }
+	#3	}
+	##	ai_chance = { factor = 100 }
+	##}
+##}
+country_event = {
+	id = vops.1
+	immediate = { 
+		log = "[GetDateText]: [Root.GetName]: event canterlot.1" 
+		hidden_effect = {
+			CHN = {
+				set_country_flag = released_vops_puppet
+			}
+		}
+	}
+	title = vops.1.t
+	desc = vops.1.d
+	picture = GFX_event_changeling_approved_stamp
+	is_triggered_only = yes
+	
+	option = {
+		name = vops.1.a
+		ai_chance = { 
+			factor = 1
+		}
+		hidden_effect = {
+			57 = {
+				add_core_of = VOP
+			}
+			release_puppet = VOP
+			VOP = {
+				hidden_effect = {
+					set_global_flag = CHN_VOP_made
+					set_country_flag = is_changeling_puppet
+					load_focus_tree = vops_protectorate_fake
+					if = {
+						limit = {
+							has_dlc = "La Resistance"
+						}
+						create_country_leader = {
+							name = "Vaspier Orn Kladisium"
+							desc = "POLITICS_VASPIER_DESC"
+							picture = "Lilac.tga"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+								secret_police_chief_lar
+							}
+						}
+					}
+
+					else = {
+						create_country_leader = {
+							name = "Vaspier Orn Kladisium"
+							desc = "POLITICS_VASPIER_DESC"
+							picture = "Lilac.tga"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+								secret_police_chief
+							}
+						}
+					}
+
+				}
+				if = {
+					limit = { has_dlc = "La Resistance" }
+					create_intelligence_agency = yes
+				}				
+				set_popularities = {
+					democratic = 3
+					fascism = 85
+					communism = 10
+					neutrality = 2
+				}				
+				set_party_name = { 
+					ideology = neutrality 
+					name = VOP_collaborators
+					long_name = VOP_collaborators_long
+				}
+				set_party_name = { 
+					ideology = fascism 
+					name = VOP_vops
+					long_name = VOP_vops_long 
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = VOP_traitors_h_long
+					name = VOP_traitors_h
+				}
+				set_party_name = { 
+					ideology = communism 
+					long_name = VOP_traitors_c_long
+					name = VOP_traitors_c
+				}
+			}
+			CHN = {
+				VOP = { transfer_technology = yes }
+			}
+		}
+	}
+	option = {
+		name = canterlot.1.b
+		ai_chance = { 
+			factor = 0
+		}
+		hidden_effect = {
+			57 = {
+				add_core_of = VOP
+			}
+			release_puppet = VOP
+			VOP = {
+				hidden_effect = {
+					set_global_flag = CHN_VOP_made
+					set_country_flag = is_changeling_puppet
+					load_focus_tree = vops_protectorate_fake
+					if = {
+						limit = {
+							has_dlc = "La Resistance"
+						}
+						create_country_leader = {
+							name = "Vaspier Orn Kladisium"
+							desc = "POLITICS_VASPIER_DESC"
+							picture = "Lilac.tga"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+								secret_police_chief_lar
+							}
+						}
+					}
+
+					else = {
+						create_country_leader = {
+							name = "Vaspier Orn Kladisium"
+							desc = "POLITICS_VASPIER_DESC"
+							picture = "Lilac.tga"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+								secret_police_chief
+							}
+						}
+					}
+
+				}
+				if = {
+					limit = { has_dlc = "La Resistance" }
+					create_intelligence_agency = yes
+				}				
+				set_popularities = {
+					democratic = 3
+					fascism = 85
+					communism = 10
+					neutrality = 2
+				}				
+				set_party_name = { 
+					ideology = neutrality 
+					name = VOP_collaborators
+					long_name = VOP_collaborators_long
+				}
+				set_party_name = { 
+					ideology = fascism 
+					name = VOP_vops
+					long_name = VOP_vops_long 
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = VOP_traitors_h_long
+					name = VOP_traitors_h
+				}
+				set_party_name = { 
+					ideology = communism 
+					long_name = VOP_traitors_c_long
+					name = VOP_traitors_c
+				}
+			}
+			CHN = {
+				VOP = { transfer_technology = yes }
+			}
+		}
+		VOP = {
+			change_tag_from = ROOT
+		}
+		custom_effect_tooltip = VOP_must_select_this_option_for_player
+	}
+}
