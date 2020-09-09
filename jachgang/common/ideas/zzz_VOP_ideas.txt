@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		VOP_good_codes_lar = {
+			allowed = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = FRA_scw_intervention_republicans_focus
+	
+			modifier = {
+				crypto_strength = 1
+			}
+		}
+		VOP_good_codes = {
+			allowed = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = FRA_scw_intervention_republicans_focus
+	
+			modifier = {
+				encryption = 1
+			}
+		}
+	}
+}
