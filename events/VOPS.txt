@@ -189,6 +189,5 @@ country_event = {
 		VOP = {
 			change_tag_from = ROOT
 		}
-		custom_effect_tooltip = VOP_must_select_this_option_for_player
 	}
 }

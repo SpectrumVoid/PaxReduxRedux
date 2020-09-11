@@ -339,7 +339,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = VOP_the_abyssal_state
+		id = VOP_the_watchful_state
 		icon = GFX_goal_chn_man_spyeye
 		cost = 10.00
 		prerequisite = {
@@ -356,7 +356,7 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VOP_complete_urbanization"
+			log = "[GetDateText]: [Root.GetName]: Focus VOP_the_watchful_state"
 			add_autonomy_score = { value = 1000 }
 			set_faction_spymaster = yes
 			add_political_power = 300

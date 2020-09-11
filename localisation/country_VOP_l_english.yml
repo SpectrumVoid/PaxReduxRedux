@@ -2,6 +2,7 @@
  ### Form Protectorate ###
  CHN_vops_protectorate:0 "Form the VOPS State"
  CHN_vops_protectorate.t:0 "Form the VOPS State"
+ vops_protectorate:0 "the VOPS Protectorate focus tree"
 
  ### COUNTRYNAME ###
  VOP_fascism:0 "The VOPS State"
@@ -59,8 +60,18 @@
  VOP_better_decryption_desc:0 "Codebreaking has always been something we've been rightly proud of, and the Queen's Guard have simultaneously envied and scorned us for it. Every state-owned radio station in the Hegemony must have at least one officer within ten kilometers available for consultation and advice, and as we simply don't have the bugpower for that, it's time to share at least a few of our secrets with our brothers and sisters."
  VOP_massive_recruitment:0 "Massive Recruitment"
  VOP_massive_recruitment_desc:0 "There is no reason to deny loyal citizens of our state the right to work for us. Regardless of race, anyone can become a VOPS agent if they pass the tests."
- VOP_even_better_cryptography:0 "The VOPS Department of SIGINT"
+ VOP_garrison_training:0 "Training the Garrisons"
+ VOP_garrison_training_desc:0 "The garrisons across the Hegemony are woefully underprepared at finding foreign agents. We will educate them all in how to spot a spy and what to do upon catching them. The most important thing, of course, is to make sure we, not the Queen's Guard, get our hooves on them."
+ VOP_even_better_cryptography:0 "VOPS SIGINT and COINTELPRO"
  VOP_even_better_cryptography_desc:0 "Old codes can only get us so far. In our backwater, irrelevant little town, we can begin research into modern code machines and methods of analyzing enemy ciphers, including automated systems. Soon, no one in the world will be able to read our messages, and we will read every one of theirs.\n\nRemember to transmit in clear or not at all; never partially encrypt!"
+ VOP_counterterrorism:0 "Counterterrorism Tactics"
+ VOP_counterterrorism_desc:0 "The Queen's Guard is completely wrong about the proper response to terrorism. Widescale oppression will only aggravate the people further. Instead, preemptive disappearances, extensive questioning, and above all, massive intelligence gathering and persuading former terrorists to change sides are the key to success."
+ VOP_fund_vops_branches:0 "New VOPS Branches"
+ VOP_fund_vops_branches_desc:0 "As excellent as our headquarters are, nothing can replace the value of having lots and lots of agents. To that end, we can use our own economy to set up branches of VOPS in other regions of the Hegemony, and later expand them as we deem fit."
+ VOP_complete_urbanization:0 "Complete Urbanization"
+ VOP_complete_urbanization_desc:0 "Not a single centimeter of space shall go to waste. Buildings crowd together in efficient, brutalist style. Our factories churn out, not guns or tanks, but booklets, disguises, poisons, and binoculars."
+ VOP_the_watchful_state:0 "The Watchful State"
+ VOP_the_watchful_state_desc:0 "We are the Invisible Hoof. We are the Vesalipolis Office of Public Safety. We come before and after. We are forever. And eventually... eventually we will lead them into the day."
 
  ### Parties ###
  VOP_collaborators:0 "Collaborators"
