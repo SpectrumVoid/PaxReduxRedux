@@ -1,0 +1,8 @@
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_chn
+	names = { "VOPS HQ" } # Vesalipolis Office of Public Security
+	
+	default = { tag = VOP }
+	available = { original_tag = VOP }
+}

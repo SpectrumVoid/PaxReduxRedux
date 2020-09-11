@@ -103,6 +103,17 @@ add_ideas = {
 	closed_economy
 }
 
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	add_ideas = VOP_spystate_lar
+	add_ideas = VOP_vopshq_lar
+}
+else = {
+	add_ideas = VOP_spystate
+	add_ideas = VOP_vopshq
+}
+
 create_country_leader = {
 	name = "Sugar Belle"
 	desc = "POLITICS_SUGARBELLE"

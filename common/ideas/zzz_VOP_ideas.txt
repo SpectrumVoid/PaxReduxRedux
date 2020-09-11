@@ -78,7 +78,10 @@ ideas = {
 			picture = CHN_chrysalis_embarassed
 			removal_cost = -1
 			modifier = {
-				decryption_factor = 0.25
+				decryption_factor = 0.35
+				subversive_activites_upkeep = -0.1
+				foreign_subversive_activites = -0.1
+				drift_defence_factor = 0.1		
 			}
 		}
 		VOP_vopshq_lar = {
@@ -91,7 +94,9 @@ ideas = {
 			picture = CHN_chrysalis_embarassed
 			removal_cost = -1
 			modifier = {
-				
+				operative_slot = 1
+				own_operative_detection_chance_factor = -0.1
+				decryption_power_factor = 0.1
 			}
 		}
 	}
