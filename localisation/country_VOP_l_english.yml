@@ -44,7 +44,7 @@
  VOP_vopshq2:0 "VOPS HQ"
  VOP_vopshq2_desc:0 "The Hexagon, SIGINT, and other facilities crowd out the old architecture as everything is replaced with superior modern engineering. Skyscapers jut up from land that once only held small cottages. The entire Hegemony is impressed by our skill."
  VOP_vopshq2_lar:0 "VOPS HQ"
- VOP_vopshq2_desc_lar:0 "The Hexagon, SIGINT, and other facilities crowd out the old architecture as everything is replaced with superior modern engineering. Skyscapers jut up from land that once only held small cottages. The entire Hegemony is impressed by our skill."
+ VOP_vopshq2_lar_desc:0 "The Hexagon, SIGINT, and other facilities crowd out the old architecture as everything is replaced with superior modern engineering. Skyscapers jut up from land that once only held small cottages. The entire Hegemony is impressed by our skill."
  VOP_good_codes_lar:0 "Better Encryption"
  VOP_good_codes_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
  VOP_good_codes:0 "Better Encryption"
@@ -68,8 +68,10 @@
  VOP_garrison_traininglar_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
  VOP_recruitment:0 "Non-Discriminatory Recruitment"
  VOP_recruitment_desc:0 "Ethnonationalism is the mark of a Queen's Guard. We welcome any who are skilled into our ranks."
+ VOP_total_control_lar:0 "Total Control"
+ VOP_total_control_lar_desc:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We need not roam the streets in uniform or even in our own skin. In our State, at least, we are omniscient."
  VOP_total_control:0 "Total Control"
- VOP_total_control:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We need not roam the streets in uniform or even in our own skin. In our State, at least, we are omniscient."
+ VOP_total_control_desc:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We need not roam the streets in uniform or even in our own skin. In our State, at least, we are omniscient."
 
  ### Foci ###
  VOP_nothing_much_to_do:0 "Getting Affairs in Order"

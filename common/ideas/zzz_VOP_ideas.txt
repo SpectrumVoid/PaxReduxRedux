@@ -368,7 +368,7 @@ ideas = {
 				drift_defence_factor = 0.2
 			}
 		}
-		VOP_total_control_lar = {
+		VOP_total_control = {
 			allowed = {
 				always = no
 			}
