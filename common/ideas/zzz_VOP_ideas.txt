@@ -34,5 +34,65 @@ ideas = {
 				encryption = 1
 			}
 		}
+		VOP_spystate_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+			    enemy_operative_detection_chance_factor = 0.20
+				civilian_intel_to_others = -20.0
+				army_intel_to_others = -20.0
+				navy_intel_to_others = -20.0
+				airforce_intel_to_others = -20.0
+			}
+		}
+		VOP_spystate = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				encryption_factor = 0.25
+				civilian_intel_to_others = -20.0
+				army_intel_to_others = -20.0
+				navy_intel_to_others = -20.0
+				airforce_intel_to_others = -20.0
+			}
+		}
+		VOP_vopshq = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.25
+			}
+		}
+		VOP_vopshq_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
 	}
 }

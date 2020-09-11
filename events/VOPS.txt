@@ -45,6 +45,7 @@ country_event = {
 					set_global_flag = CHN_VOP_made
 					set_country_flag = is_changeling_puppet
 					load_focus_tree = vops_protectorate
+					set_country_flag = trade_laws_blocked
 					if = {
 						limit = {
 							has_dlc = "La Resistance"
@@ -59,6 +60,7 @@ country_event = {
 								secret_police_chief_lar
 							}
 						}
+						add_ideas = VOP_spystate_lar
 					}
 
 					else = {
@@ -138,6 +140,7 @@ country_event = {
 								secret_police_chief_lar
 							}
 						}
+						add_ideas = VOP_spystate_lar
 					}
 
 					else = {
@@ -151,6 +154,7 @@ country_event = {
 								secret_police_chief
 							}
 						}
+						add_ideas = VOP_spystate
 					}
 
 				}

@@ -40,9 +40,6 @@ focus_tree = {
 				add_manpower = 25000
 				set_state_category = large_city
 			}
-			add_ideas = partial_economic_mobilisation
-			add_ideas = extensive_conscription
-			add_ideas = limited_exports
 			if = {
 				limit = {
 				has_dlc = "La Resistance"
