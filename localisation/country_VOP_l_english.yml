@@ -49,7 +49,20 @@
  VOP_good_codes2_lar_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
  VOP_good_codes2:0 "Superior Encryption"
  VOP_good_codes2_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
-
+ VOP_good_codebreaking_lar:0 "Better Decryption"
+ VOP_good_codes_lar_desc:0 "VOPS agents have taught us new algorithms and methods of cipher attack."
+ VOP_good_codes:0 "Better Decryption"
+ VOP_good_codes_desc:0 "VOPS agents have taught us new algorithms and methods of cipher attack."
+ VOP_good_codes2_lar:0 "Superior Encryption"
+ VOP_good_codes2_lar_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
+ VOP_good_codes2:0 "Superior Encryption"
+ VOP_good_codes2_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
+ VOP_garrison_training:0 "Counterintelligence Police"
+ VOP_garrison_training_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
+ VOP_garrison_training_lar:0 "Counterintelligence Police"
+ VOP_garrison_traininglar_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
+ VOP_total_control:0 "Total Control"
+ VOP_total_control:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We need not roam the streets in uniform or even in our own skin. In our State, at least, we are omniscient."
 
  ### Foci ###
  VOP_nothing_much_to_do:0 "Getting Affairs in Order"
@@ -71,7 +84,7 @@
  VOP_complete_urbanization:0 "Complete Urbanization"
  VOP_complete_urbanization_desc:0 "Not a single centimeter of space shall go to waste. Buildings crowd together in efficient, brutalist style. Our factories churn out, not guns or tanks, but booklets, disguises, poisons, and binoculars."
  VOP_the_watchful_state:0 "The Watchful State"
- VOP_the_watchful_state_desc:0 "We are the Invisible Hoof. We are the Vesalipolis Office of Public Safety. We come before and after. We are forever. And eventually... eventually we will lead them into the day."
+ VOP_the_watchful_state_desc:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We do not roam the streets in uniform or even in our own skin, even recruiting extensively from the local population. Nearly everyone is an informant, and those few who aren't are carefully watched. In our State, at least, we are omniscient."
 
  ### Parties ###
  VOP_collaborators:0 "Collaborators"

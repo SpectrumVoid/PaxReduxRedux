@@ -63,7 +63,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		x = 4
+		x = 3
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_better_encryption"
@@ -124,7 +124,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		x = 6
+		x = 7
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_better_decryption"
@@ -199,6 +199,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = VOP_better_decryption
+		}
+		prerequisite = {
+			focus = VOP_massive_recruitment
 		}
 		available = {
 		}
