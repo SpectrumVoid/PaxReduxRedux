@@ -63,7 +63,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		x = 3
+		x = 5
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_better_encryption"
@@ -102,7 +102,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		x = 5
+		x = 3
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_massive_recruitment"
@@ -158,12 +158,15 @@ focus_tree = {
 		prerequisite = {
 			focus = VOP_better_encryption
 		}
+		prerequisite = {
+			focus = VOP_massive_recruitment
+		}
 		available = {
 		}
 		ai_will_do = {
 			factor = 20
 		}
-		x = 3
+		x = 4
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_garrison_training"
@@ -200,15 +203,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VOP_better_decryption
 		}
-		prerequisite = {
-			focus = VOP_massive_recruitment
-		}
 		available = {
 		}
 		ai_will_do = {
 			factor = 20
 		}
-		x = 5
+		x = 6
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_even_better_cryptography"
@@ -268,15 +268,18 @@ focus_tree = {
 		icon = GFX_goal_chn_man_spyeye
 		cost = 10.00
 		prerequisite = {
-			focus = VOP_better_decryption
+			focus = VOP_garrison_training
+		}
+		prerequisite = {
+			focus = VOP_even_better_cryptography
 		}
 		available = {
 		}
 		ai_will_do = {
 			factor = 20
 		}
-		x = 7
-		y = 2
+		x = 5
+		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_counterterrorism"
 			add_ideas = VOP_counterterrorism
@@ -293,9 +296,6 @@ focus_tree = {
 		icon = GFX_goal_chn_man_spyeye
 		cost = 10.00
 		prerequisite = {
-			focus = VOP_garrison_training
-		}
-		prerequisite = {
 			focus = VOP_even_better_cryptography
 		}
 		available = {
@@ -303,7 +303,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
-		x = 4
+		x = 7
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_fund_vops_branches"
@@ -318,15 +318,12 @@ focus_tree = {
 		prerequisite = {
 			focus = VOP_garrison_training
 		}
-		prerequisite = {
-			focus = VOP_even_better_cryptography
-		}
 		available = {
 		}
 		ai_will_do = {
 			factor = 20
 		}
-		x = 6
+		x = 3
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_complete_urbanization"
@@ -347,6 +344,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = VOP_fund_vops_branches
+		}
+		prerequisite = {
+			focus = VOP_counterterrorism
 		}
 		prerequisite = {
 			focus = VOP_complete_urbanization
