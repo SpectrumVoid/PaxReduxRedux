@@ -24,6 +24,10 @@
  vops.1.a:0 "Sure I guess."
  vops.1.b:0 "Time to do some codebreaking."
 
+ ### Decisions ###
+ VOPS_branch_upgrades:0 "Expanding Other VOPS Branches"
+ VOP_create_VOP_branch:0 "Create a Branch"
+
  ### Ideas ###
  VOP_spystate:0 "The Spy State"
  VOP_spystate_desc:0 "This region is directly administrated by VOPS with access to resources of the Hegemony. Information is tightly controlled to ensure nothing slips out, and the ironclad border makes espionage agaisnt it very risky."
