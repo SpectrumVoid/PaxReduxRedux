@@ -34,6 +34,81 @@ ideas = {
 				encryption = 1
 			}
 		}
+		VOP_good_codebreaking_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption_power = 15
+			}
+		}
+		VOP_good_codebreaking = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption = 0.5
+			}
+		}
+		VOP_garrison_training_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				intelligence_agency_defense = 1
+				resistance_garrison_penetration_chance = -0.05
+				resistance_damage_to_garrison = -0.05
+				resistance_target = -0.05
+			}
+		}
+		VOP_garrison_training = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				resistance_garrison_penetration_chance = -0.05
+				resistance_damage_to_garrison = -0.05
+				resistance_target = -0.05
+			}
+		}
+
+
 		VOP_spystate_lar = {
 			allowed = {
 				always = no

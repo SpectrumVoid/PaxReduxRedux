@@ -36,10 +36,19 @@
  VOP_good_codes_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
  VOP_good_codes:0 "Superior Encryption"
  VOP_good_codes_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
+ VOP_good_codes2_lar:0 "Superior Encryption"
+ VOP_good_codes2_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
+ VOP_good_codes2:0 "Superior Encryption"
+ VOP_good_codes2_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
+
 
  ### Foci ###
- nothing_much_to_do:0 "Getting Affairs in Order"
- nothing_much_to_do_desc:0 "Until our plans come to fruition, the VOPS State will function merely as a cryptography and cryptanalysis department. We shall install great radio receiving equipment and mobilize the local population to aid us in our research. Dieter thinks he's got the better deal by ruling Stalliongrad, but soon we will show him just how foolhardy he really is."
+ VOP_nothing_much_to_do:0 "Getting Affairs in Order"
+ VOP_nothing_much_to_do_desc:0 "Until our plans come to fruition, the VOPS State shall hide in obscurity. We will construct a massive Hexagon to serve as our base of operations, and mobilize the local population to aid us in our research. Dieter thinks he's got the better deal by ruling all of Stalliongrad, but soon we will show him just how foolhardy he really is."
+ VOP_superior_encryption:0 "Codes of the Hegemony"
+ VOP_superior_encryption_desc:0 "Vesalipolis needs a return on their investment. It's time to show them we aren't wasting their money, and by helping the entire Hegemony properly use their code machines, we'll improve security nationwide."
+ VOP_superior_encryption:0 "The Codebreaker Corps"
+ VOP_superior_encryption_desc:0 "Codebreaking has always been something we've been rightly proud of, and the Queen's Guard have simultaneously envied and scorned us for it. Every state-owned radio station in the Hegemony must have at least one officer within ten kilometers available for consultation and advice, and as we simply don't have the bugpower for that, it's time to share at least a few of our secrets with our brothers and sisters."
 
  ### Parties ###
  VOP_collaborators:0 "Collaborators"

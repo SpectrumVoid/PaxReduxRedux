@@ -8,10 +8,10 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2700 y = 1350 }
+	continuous_focus_position = { x = 10 y = 10 }
 
     focus = {
-		id = nothing_much_to_do
+		id = VOP_nothing_much_to_do
 		icon = GFX_goal_chn_man_spyeye
 		cost = 10.00
 		available = {
@@ -19,7 +19,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 200
 		}
-		x = 20
+		x = 5
 		y = 0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus nothing_much_to_do"
@@ -44,6 +44,33 @@ focus_tree = {
 				limit = {
 				has_dlc = "La Resistance"
 				}
+				add_ideas = VOP_vopshq_lar
+			}
+			else = {
+				add_ideas = VOP_vopshq
+			}
+		}
+	}
+    focus = {
+		id = VOP_superior_encryption
+		icon = GFX_goal_chn_man_spyeye
+		cost = 10.00
+		prerequisite = {
+			focus = VOP_nothing_much_to_do
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nothing_much_to_do"
+			if = {
+				limit = {
+				has_dlc = "La Resistance"
+				}
 				add_ideas = VOP_good_codes_lar
 				every_other_country = {
 					limit = {
@@ -59,6 +86,140 @@ focus_tree = {
 						is_in_faction_with = ROOT
 					}
 					add_ideas = VOP_good_codes
+				}
+			}
+		}
+	}
+	focus = {
+		id = VOP_superior_decryption
+		icon = GFX_goal_chn_man_spyeye
+		cost = 10.00
+		prerequisite = {
+			focus = VOP_nothing_much_to_do
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nothing_much_to_do"
+			if = {
+				limit = {
+				has_dlc = "La Resistance"
+				}
+				add_ideas = VOP_good_codebreaking_lar
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					add_ideas = VOP_good_codebreaking_lar
+				}
+			}
+			else = {
+				add_ideas = VOP_good_codebreaking
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					add_ideas = VOP_good_codebreaking
+				}
+			}
+		}
+	}
+	focus = {
+		id = VOP_garrison_training
+		icon = GFX_goal_chn_man_spyeye
+		cost = 10.00
+		prerequisite = {
+			focus = VOP_superior_encryption
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nothing_much_to_do"
+			if = {
+				limit = {
+				has_dlc = "La Resistance"
+				}
+				add_ideas = VOP_garrison_training_lar
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					add_ideas = VOP_garrison_training_lar
+				}
+			}
+			else = {
+				add_ideas = VOP_garrison_training
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					add_ideas = VOP_garrison_training
+				}
+			}
+		}
+	}
+	focus = {
+		id = VOP_even_better_cryptography
+		icon = GFX_goal_chn_man_spyeye
+		cost = 10.00
+		prerequisite = {
+			focus = VOP_superior_encryption
+		}
+		prerequisite = {
+			focus = VOP_superior_decryption
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nothing_much_to_do"
+			if = {
+				limit = {
+				has_dlc = "La Resistance"
+				}
+				swap_ideas = {
+					remove_idea = VOP_good_codes_lar
+					add_idea = VOP_good_codes2_lar
+				}
+				swap_ideas = {
+					remove_idea = VOP_good_codebreaking_lar
+					add_idea = VOP_good_codebreaking2_lar
+				}
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					swap_ideas = {
+						remove_idea = VOP_good_codes_lar
+						add_idea = VOP_good_codes2_lar
+					}
+					swap_ideas = {
+						remove_idea = VOP_good_codebreaking_lar
+						add_idea = VOP_good_codebreaking2_lar
+					}
+				}
+			}
+			else = {
+				add_ideas = VOP_garrison_training
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					add_ideas = VOP_garrison_training
 				}
 			}
 		}
