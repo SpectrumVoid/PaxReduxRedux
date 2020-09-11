@@ -14,3 +14,6 @@ add_cores_JCH = {
 	65 = { add_core_of = JCH }
 	128 = { add_core_of = JCH }
 }
+add_cores_VOP = {
+	57 = { add_core_of = JCH }
+}

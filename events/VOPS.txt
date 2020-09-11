@@ -38,9 +38,7 @@ country_event = {
 			factor = 1
 		}
 		hidden_effect = {
-			57 = {
-				add_core_of = VOP
-			}
+			add_cores_VOP = yes
 			release_puppet = VOP
 			VOP = {
 				hidden_effect = {
