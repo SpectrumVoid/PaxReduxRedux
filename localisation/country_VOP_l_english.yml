@@ -32,23 +32,35 @@
  VOP_vopshq_desc:0 "While VOPS is still heavily active in [CHN.GetName] proper, the headquarters of VOPS has been moved to a massive complex in Our Town sprawling over kilometers, now named the Hexagon for its hivelike design. This enables VOPS to conduct extensive local recruitment and training in a facility designed to fit their needs."
  VOP_vopshq_lar:0 "VOPS HQ"
  VOP_vopshq_desc_lar:0 "While VOPS is still heavily active in [CHN.GetName] proper, the headquarters of VOPS has been moved to a massive complex in Our Town sprawling over kilometers, now named the Hexagon for its hivelike design. This enables VOPS to conduct extensive local recruitment and training in a facility designed to fit their needs."
- VOP_good_codes_lar:0 "Superior Encryption"
+ VOP_spystate2:0 "The Spy State"
+ VOP_spystate2_desc:0 "VOPS controls everything here. Nothing happens without their knowledge and approval. Even among the Hegemony, entry is an enormously arduous process taking weeks of verification."
+ VOP_spystate2_lar:0 "The Spy State"
+ VOP_spystate2_lar_desc:0 "VOPS controls everything here. Nothing happens without their knowledge and approval. Even among the Hegemony, entry is an enormously arduous process taking weeks of verification and security."
+ VOP_vopshq2:0 "VOPS HQ"
+ VOP_vopshq2_desc:0 "The Hexagon, SIGINT, and other facilities crowd out the old architecture as everything is replaced with superior modern engineering. Skyscapers jut up from land that once only held small cottages. The entire Hegemony is impressed by our skill."
+ VOP_vopshq2_lar:0 "VOPS HQ"
+ VOP_vopshq2_desc_lar:0 "The Hexagon, SIGINT, and other facilities crowd out the old architecture as everything is replaced with superior modern engineering. Skyscapers jut up from land that once only held small cottages. The entire Hegemony is impressed by our skill."
+ VOP_good_codes_lar:0 "Better Encryption"
  VOP_good_codes_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
- VOP_good_codes:0 "Superior Encryption"
+ VOP_good_codes:0 "Better Encryption"
  VOP_good_codes_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
  VOP_good_codes2_lar:0 "Superior Encryption"
- VOP_good_codes2_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
+ VOP_good_codes2_lar_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
  VOP_good_codes2:0 "Superior Encryption"
- VOP_good_codes2_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
+ VOP_good_codes2_desc:0 "VOPS agents have given us highly advanced encryption technologies, and are aiding us as advisors to make sure we use them right."
 
 
  ### Foci ###
  VOP_nothing_much_to_do:0 "Getting Affairs in Order"
  VOP_nothing_much_to_do_desc:0 "Until our plans come to fruition, the VOPS State shall hide in obscurity. We will construct a massive Hexagon to serve as our base of operations, and mobilize the local population to aid us in our research. Dieter thinks he's got the better deal by ruling all of Stalliongrad, but soon we will show him just how foolhardy he really is."
- VOP_superior_encryption:0 "Codes of the Hegemony"
- VOP_superior_encryption_desc:0 "Vesalipolis needs a return on their investment. It's time to show them we aren't wasting their money, and by helping the entire Hegemony properly use their code machines, we'll improve security nationwide."
- VOP_superior_encryption:0 "The Codebreaker Corps"
- VOP_superior_encryption_desc:0 "Codebreaking has always been something we've been rightly proud of, and the Queen's Guard have simultaneously envied and scorned us for it. Every state-owned radio station in the Hegemony must have at least one officer within ten kilometers available for consultation and advice, and as we simply don't have the bugpower for that, it's time to share at least a few of our secrets with our brothers and sisters."
+ VOP_better_encryption:0 "Codes of the Hegemony"
+ VOP_better_encryption_desc:0 "Vesalipolis needs a return on their investment. It's time to show them we aren't wasting their money, and by helping the entire Hegemony properly use their code machines, we'll improve security nationwide."
+ VOP_better_decryption:0 "The Codebreaker Corps"
+ VOP_better_decryption_desc:0 "Codebreaking has always been something we've been rightly proud of, and the Queen's Guard have simultaneously envied and scorned us for it. Every state-owned radio station in the Hegemony must have at least one officer within ten kilometers available for consultation and advice, and as we simply don't have the bugpower for that, it's time to share at least a few of our secrets with our brothers and sisters."
+ VOP_massive_recruitment:0 "Massive Recruitment"
+ VOP_massive_recruitment_desc:0 "There is no reason to deny loyal citizens of our state the right to work for us. Regardless of race, anyone can become a VOPS agent if they pass the tests."
+ VOP_even_better_cryptography:0 "The VOPS Department of SIGINT"
+ VOP_even_better_cryptography_desc:0 "Old codes can only get us so far. In our backwater, irrelevant little town, we can begin research into modern code machines and methods of analyzing enemy ciphers, including automated systems. Soon, no one in the world will be able to read our messages, and we will read every one of theirs.\n\nRemember to transmit in clear or not at all; never partially encrypt!"
 
  ### Parties ###
  VOP_collaborators:0 "Collaborators"
@@ -59,5 +71,8 @@
  VOP_traitors_c_long:0 "Suspected Communist Traitors to the State"
  VOP_traitors_h:0 "Thoraxian Traitors"
  VOP_traitors_h_long:0 "Suspected Thoraxian Traitors to the State"
+
+### Misc ###
+VOP_vops_branches_tt:0 "Will unlock decisions that let you create intel agencies for other parts of the Hegemony!"
 
  POLITICS_VASPIER_DESC:0 "Initially born in one of the most rural areas of the Changeling hivelands near the Gorak hive, Vaspier has become a key figure of the Changeling administration, even if no one knows it. Sent to gain a higher education by his family after he showed a quick mind from an early age, Vaspier soon became involved with his nation's political struggles. He was one of the changelings who signed on quickly to Chrysalis' bid to unite the hives, and served as her intel gatherer from that point on. From this position, he built the Changeling intelligence agency, VOPS, into a force to be reckoned with. It was, in fact, his hoof that guided the operation of Chrysalis' first attack on Canterlot. That failure damaged his reputation, and since then, he has worked even harder to make himself useful to his Queen. And in this, he has succeeded. The VOPS is the most secretive intelligence agency around, and it is from this that his nickname derives. Now he has been granted a state to run to his specifications, and only he knows what he will do with it."

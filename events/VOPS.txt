@@ -77,10 +77,10 @@ country_event = {
 				}
 			
 				set_popularities = {
-					democratic = 2
-					fascism = 85
-					communism = 3
-					neutrality = 10
+					democratic = 43
+					fascism = 34
+					communism = 15
+					neutrality = 8
 				}				
 				set_party_name = { 
 					ideology = neutrality 
@@ -156,10 +156,10 @@ country_event = {
 					create_intelligence_agency = yes
 				}				
 				set_popularities = {
-					democratic = 3
-					fascism = 85
-					communism = 10
-					neutrality = 2
+					democratic = 43
+					fascism = 34
+					communism = 15
+					neutrality = 8
 				}				
 				set_party_name = { 
 					ideology = neutrality 

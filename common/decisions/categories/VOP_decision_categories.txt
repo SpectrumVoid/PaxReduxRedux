@@ -1,0 +1,12 @@
+VOPS_branch_upgrades = {
+	icon = book
+	allowed = {
+		original_tag = VOP
+	}
+	visible = {
+		has_completed_focus = VOP_fund_vops_branches
+	}
+	priority = {
+		base = 200
+	}
+}
