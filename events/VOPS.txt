@@ -20,7 +20,7 @@
 country_event = {
 	id = vops.1
 	immediate = { 
-		log = "[GetDateText]: [Root.GetName]: event canterlot.1" 
+		log = "[GetDateText]: [Root.GetName]: event vops.1" 
 		hidden_effect = {
 			CHN = {
 				set_country_flag = released_vops_puppet
@@ -112,7 +112,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = canterlot.1.b
+		name = vops.1.b
 		ai_chance = { 
 			factor = 0
 		}

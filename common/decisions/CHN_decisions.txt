@@ -452,8 +452,6 @@ CHN_protectorates = {
 			OR = {
 				STL = {
 					is_subject_of = ROOT
-					has_capitulated = yes
-					exists = no
 				}
 				57 = {
 					is_owned_and_controlled_by = ROOT
