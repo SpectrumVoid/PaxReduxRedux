@@ -363,7 +363,6 @@ focus_tree = {
 			add_autonomy_score = { value = 1000 }
 			set_faction_spymaster = yes
 			add_political_power = 300
-			add_ideas = VOP_total_control
 			add_ideas = war_economy
 			if = {
 				limit = {
@@ -377,6 +376,7 @@ focus_tree = {
 					remove_idea = VOP_vopshq_lar
 					add_idea = VOP_vopshq2_lar
 				}
+				add_ideas = VOP_total_control_lar
 			}
 			else = {
 				swap_ideas = {
@@ -387,6 +387,7 @@ focus_tree = {
 					remove_idea = VOP_vopshq
 					add_idea = VOP_vopshq2
 				}
+				add_ideas = VOP_total_control
 			}
 		}
 	}
