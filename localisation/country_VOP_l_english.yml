@@ -25,14 +25,16 @@
 
  ### Ideas ###
  VOP_good_codes_lar:0 "Superior Encryption"
+ VOP_good_codes_lar_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
  VOP_good_codes:0 "Superior Encryption"
+ VOP_good_codes_desc:0 "VOPS agents have aided us in setting up better ciphers and code machines."
 
  ### Foci ###
  nothing_much_to_do:0 "Getting Affairs in Order"
  nothing_much_to_do_desc:0 "Until our plans come to fruition, the VOPS State will function merely as a cryptography and cryptanalysis department. We shall install great radio receiving equipment and mobilize the local population to aid us in our research. Dieter thinks he's got the better deal by ruling Stalliongrad, but soon we will show him just how foolhardy he really is."
  ### Parties ###
  VOP_collaborators:0 "Collaborators"
- VOP_collaborators_long:0 "Seemingly Loyal Citizens Cooperating with the State"
+ VOP_collaborators_long:0 "Superficially Loyal Citizens Cooperating with the State"
  VOP_vops:0 "VOPS Loyalists"
  VOP_vops_long:0 "Vesalipolis Office of Public Safety and Affiliated Informants"
  VOP_traitors_c:0 "Communist Traitors"

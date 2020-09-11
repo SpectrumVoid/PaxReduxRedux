@@ -2,10 +2,10 @@ ideas = {
 	country = {
 		VOP_good_codes_lar = {
 			allowed = {
-				has_government = fascism
+				is_in_faction_with = VOP
 			}
 			allowed_civil_war = {
-				has_government = fascism
+				always = yes
 			}
 		
 	
@@ -19,10 +19,10 @@ ideas = {
 		}
 		VOP_good_codes = {
 			allowed = {
-				has_government = fascism
+				is_in_faction_with = VOP
 			}
 			allowed_civil_war = {
-				has_government = fascism
+				always = yes
 			}
 		
 	
