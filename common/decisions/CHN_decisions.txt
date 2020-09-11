@@ -445,7 +445,6 @@ CHN_protectorates = {
 
 		days_remove = 5
 
-		fire_only_once = yes
 
 		visible = {
 			has_government = fascism
@@ -456,6 +455,12 @@ CHN_protectorates = {
 				57 = {
 					is_owned_and_controlled_by = ROOT
 				}
+			}
+			NOT = {
+				has_country_flag = released_vops_puppet
+			}
+			NOT = {
+				VOP = { exists = yes }
 			}
 		}
 
