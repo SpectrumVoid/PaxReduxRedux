@@ -107,7 +107,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VOP_massive_recruitment"
 			add_manpower = 25000
-			add_ideas = VOPS_recruitment
+			add_ideas = VOP_recruitment
 			add_popularity = { ideology = fascism popularity = 0.20 }
 			add_stability = 0.1
 		}
@@ -339,7 +339,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = VOP_the_watchful_state
+		id = VOP_the_omniscient_state
 		icon = GFX_goal_chn_man_spyeye
 		cost = 10.00
 		prerequisite = {
@@ -359,7 +359,7 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus VOP_the_watchful_state"
+			log = "[GetDateText]: [Root.GetName]: Focus VOP_the_omniscient_state"
 			add_autonomy_score = { value = 1000 }
 			set_faction_spymaster = yes
 			add_political_power = 300

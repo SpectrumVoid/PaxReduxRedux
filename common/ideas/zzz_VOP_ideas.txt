@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		# DLC-neutral
-		VOPS_recruitment = {
+		VOP_recruitment = {
 			allowed = {
 				always = no
 			}
@@ -12,6 +12,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				compliance_gain = 0.002
+				conscription_factor = 0.25
 			}
 		}
 		VOP_counterterrorism = {
@@ -41,9 +42,16 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription = 0.075
-				conscription_factor = 0.15
 				consumer_goods_factor = -0.1
-				fascism_drift = 0.06
+				civilian_intel_factor = 0.5
+				army_intel_factor = 0.5
+				airforce_intel_factor = 0.5
+				navy_intel_factor = 0.5
+				operative_death_on_capture_chance = 0.25
+				enemy_operative_capture_chance_factor = 1
+				enemy_operative_intel_extraction_rate = 0.25
+				operation_risk = -0.25
+				intel_network_gain_factor = 0.25
 			}
 		}
 		# La Resistance 

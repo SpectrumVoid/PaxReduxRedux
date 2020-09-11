@@ -61,6 +61,8 @@
  VOP_garrison_training_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
  VOP_garrison_training_lar:0 "Counterintelligence Police"
  VOP_garrison_traininglar_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
+ VOP_recruitment:0 "Non-Discriminatory Recruitment"
+ VOP_recruitment_desc:0 "Ethnonationalism is the mark of a Queen's Guard. We welcome any who are skilled into our ranks."
  VOP_total_control:0 "Total Control"
  VOP_total_control:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We need not roam the streets in uniform or even in our own skin. In our State, at least, we are omniscient."
 
@@ -76,15 +78,15 @@
  VOP_garrison_training:0 "Training the Garrisons"
  VOP_garrison_training_desc:0 "The garrisons across the Hegemony are woefully underprepared at finding foreign agents. We will educate them all in how to spot a spy and what to do upon catching them. The most important thing, of course, is to make sure we, not the Queen's Guard, get our hooves on them."
  VOP_even_better_cryptography:0 "VOPS SIGINT and COINTELPRO"
- VOP_even_better_cryptography_desc:0 "Old codes can only get us so far. In our backwater, irrelevant little town, we can begin research into modern code machines and methods of analyzing enemy ciphers, including automated systems. Soon, no one in the world will be able to read our messages, and we will read every one of theirs.\n\nRemember to transmit in clear or not at all; never partially encrypt!"
+ VOP_even_better_cryptography_desc:0 "Old codes can only get us so far. In our backwater, irrelevant little town, we can begin research into modern code machines and methods of analyzing enemy ciphers, including automated systems. Soon, no one in the world will be able to read our messages, and we will read every one of theirs.\nRemember to transmit in clear or not at all; never partially encrypt!"
  VOP_counterterrorism:0 "Counterterrorism Tactics"
  VOP_counterterrorism_desc:0 "The Queen's Guard is completely wrong about the proper response to terrorism. Widescale oppression will only aggravate the people further. Instead, preemptive disappearances, extensive questioning, and above all, massive intelligence gathering and persuading former terrorists to change sides are the key to success."
  VOP_fund_vops_branches:0 "New VOPS Branches"
  VOP_fund_vops_branches_desc:0 "As excellent as our headquarters are, nothing can replace the value of having lots and lots of agents. To that end, we can use our own economy to set up branches of VOPS in other regions of the Hegemony, and later expand them as we deem fit."
  VOP_complete_urbanization:0 "Complete Urbanization"
  VOP_complete_urbanization_desc:0 "Not a single centimeter of space shall go to waste. Buildings crowd together in efficient, brutalist style. Our factories churn out, not guns or tanks, but booklets, disguises, poisons, and binoculars."
- VOP_the_watchful_state:0 "The Watchful State"
- VOP_the_watchful_state_desc:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We do not roam the streets in uniform or even in our own skin, even recruiting extensively from the local population. Nearly everyone is an informant, and those few who aren't are carefully watched. In our State, at least, we are omniscient."
+ VOP_the_omniscient_state:0 "The Omniscient State"
+ VOP_the_omniscient_state_desc:0 "We could be anyone. Every local resistance movement is not only infiltrated by us, but was set up by us as controlled opposition. All social movements are created as limited hangouts to prevent real change. We do not roam the streets in uniform or even in our own skin, even recruiting extensively from the local population. In our State, we are omniscient."
 
  ### Parties ###
  VOP_collaborators:0 "Collaborators"
