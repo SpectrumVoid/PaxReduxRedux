@@ -455,6 +455,15 @@ CHN_protectorates = {
 				57 = {
 					is_owned_and_controlled_by = ROOT
 				}
+				57 = {
+					owner = {
+						controls_state = PREV
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
 			}
 			NOT = {
 				has_country_flag = released_vops_puppet

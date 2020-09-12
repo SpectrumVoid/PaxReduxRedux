@@ -1,0 +1,31 @@
+leader_traits = {
+	vops_spyofficer = {
+		type = all
+		trait_type = personality_trait
+
+		allowed = {
+			always = no
+		}
+
+		modifier = {
+			promote_cost_factor = -0.25
+			leader_
+			recon_factor = 0.25
+			forest = {
+				movement = 0.05
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+	}
+	harmonist_sympathizer = {
+		type = all
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		modifier = {
+			
+		}
+	}
+}

@@ -155,6 +155,44 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "'Shadow Spade'"
+	desc = VOP_DESC_SHADOW
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer brilliant_strategist arrow }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	female = yes
+}
+
+create_corps_commander = {
+	name = "'Daring Do'"
+	desc = VOP_DESC_DARING
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer bleeding_heart medical_expert harmonist_sympathizer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+	female = yes
+}
+
+create_corps_commander = {
+	name = "'The Colt in Crimson'"
+	desc = VOP_DESC_COLT
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer trait_reckless changeling_love_succ }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
 set_rule = {
 	can_generate_female_aces = yes
 }
