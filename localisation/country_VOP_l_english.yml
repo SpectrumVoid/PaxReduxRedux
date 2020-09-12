@@ -65,7 +65,7 @@
  VOP_garrison_training:0 "Counterintelligence Police"
  VOP_garrison_training_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
  VOP_garrison_training_lar:0 "Counterintelligence Police"
- VOP_garrison_traininglar_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
+ VOP_garrison_training_lar_desc:0 "Our ordinary police have been trained by VOPS to identify common espionage tactics and can now defend against foreign subversion more effectively."
  VOP_recruitment:0 "Non-Discriminatory Recruitment"
  VOP_recruitment_desc:0 "Ethnonationalism is the mark of a Queen's Guard. We welcome any who are skilled into our ranks."
  VOP_total_control_lar:0 "Total Control"
