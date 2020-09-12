@@ -171,7 +171,7 @@ uses_changeling_portraits = {
 		original_tag = CCN
 		original_tag = NCH
 		original_tag = MAN
-		original_tag = VOP
+		original_tag = JCH
 		original_tag = VOP
 	}
 }
@@ -253,6 +253,8 @@ is_country_main_culture_changeling = {
 		original_tag = CCN
 		original_tag = MAN
 		original_tag = NCH
+		original_tag = JCH
+		original_tag = VOP
 	}
 }
 
