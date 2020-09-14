@@ -1,4 +1,5 @@
 JCH = "countries/Canterlot.txt"
+VOP = "countries/VOPSState.txt"
 
 ###Base Mod
 

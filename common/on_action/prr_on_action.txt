@@ -1,0 +1,25 @@
+on_actions = {
+	on_offer_join_faction = {
+		if = {
+			limit = {
+				AND = {
+					FROM = {
+						is_in_faction_with = VOP
+					}
+					VOP = {
+						has_completed_focus = MIT_SIC_assistance
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = VOP_good_codes_lar
+			}
+			else = {
+				add_ideas = VOP_good_codes
+			}
+		}
+	}
+}

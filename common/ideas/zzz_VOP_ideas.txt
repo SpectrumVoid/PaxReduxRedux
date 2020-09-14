@@ -1,0 +1,392 @@
+ideas = {
+	country = {
+		# DLC-neutral
+		VOP_recruitment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				compliance_gain = 0.002
+				conscription_factor = 0.25
+			}
+		}
+		VOP_counterterrorism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				resistance_target = -0.1
+				resistance_decay = 0.5
+				resistance_garrison_penetration_chance = -0.1
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+		# La Resistance 
+		VOP_good_codes_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				crypto_strength = 1
+			}
+		}
+		VOP_good_codes2_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				crypto_strength = 2
+			}
+		}
+		VOP_good_codebreaking_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption_power = 15
+			}
+		}
+		VOP_good_codebreaking2_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption_power = 30
+			}
+		}
+		VOP_spystate_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+			    enemy_operative_detection_chance_factor = 0.20
+				civilian_intel_to_others = -15.0
+				army_intel_to_others = -10.0
+				navy_intel_to_others = -10.0
+				airforce_intel_to_others = -10.0
+				fascism_drift = 0.02
+			}
+		}
+		VOP_spystate2_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+			    enemy_operative_detection_chance_factor = 0.40
+				civilian_intel_to_others = -30.0
+				army_intel_to_others = -25.0
+				navy_intel_to_others = -25.0
+				airforce_intel_to_others = -25.0
+				fascism_drift = 0.04
+			}
+		}
+		VOP_garrison_training_lar = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				intelligence_agency_defense = 1
+			}
+		}
+		VOP_vopshq_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				operative_slot = 1
+				own_operative_detection_chance_factor = -0.1
+				decryption_power_factor = 0.1
+			}
+		}
+		VOP_vopshq2_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				operative_slot = 2
+				own_operative_detection_chance_factor = -0.2
+				decryption_power_factor = 0.2
+			}
+		}
+		VOP_total_control_lar = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				conscription = 0.075
+				consumer_goods_factor = -0.1
+				civilian_intel_factor = 0.5
+				army_intel_factor = 0.5
+				airforce_intel_factor = 0.5
+				navy_intel_factor = 0.5
+				operative_death_on_capture_chance = 0.25
+				enemy_operative_capture_chance_factor = 1
+				enemy_operative_intel_extraction_rate = 0.25
+				operation_risk = -0.25
+				intel_network_gain_factor = 0.25
+			}
+		}
+
+		# No La Resistance
+
+		VOP_good_codes = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				encryption = 0.5
+				encryption_factor = 0.1
+			}
+		}
+		VOP_good_codebreaking = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption = 0.5
+				decryption_factor = 0.1
+			}
+		}
+		VOP_good_codes2 = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				encryption = 1
+				encryption_factor = 0.2
+			}
+		}
+		VOP_good_codebreaking2 = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				decryption = 1
+				decryption_factor = 0.2
+			}
+		}
+
+		VOP_garrison_training = {
+			allowed = {
+				is_in_faction_with = VOP
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+		
+	
+			removal_cost = -1
+	
+			picture = CHN_decentralised_fear
+	
+			modifier = {
+				subversive_activites_upkeep = -0.1
+				foreign_subversive_activites = -0.1
+			}
+		}
+		VOP_spystate = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				encryption_factor = 0.25
+				civilian_intel_to_others = -15.0
+				army_intel_to_others = -10.0
+				navy_intel_to_others = -10.0
+				airforce_intel_to_others = -10.0
+				fascism_drift = 0.02
+			}
+		}
+		VOP_vopshq = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.25
+				subversive_activites_upkeep = -0.1
+				foreign_subversive_activites = -0.1
+				drift_defence_factor = 0.1		
+			}
+		}
+		VOP_spystate2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				encryption_factor = 0.5
+				civilian_intel_to_others = -30.0
+				army_intel_to_others = -25.0
+				navy_intel_to_others = -25.0
+				airforce_intel_to_others = -25.0
+				fascism_drift = 0.04
+			}
+		}
+		VOP_vopshq2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHN_chrysalis_embarassed
+			removal_cost = -1
+			modifier = {
+				decryption_factor = 0.5
+				subversive_activites_upkeep = -0.2
+				foreign_subversive_activites = -0.2
+				drift_defence_factor = 0.2
+			}
+		}
+		VOP_total_control = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = NCH_communist_infiltration_idea
+			removal_cost = -1
+			modifier = {
+				conscription = 0.075
+				consumer_goods_factor = -0.1
+				civilian_intel_factor = 0.5
+				army_intel_factor = 0.5
+				airforce_intel_factor = 0.5
+				navy_intel_factor = 0.5
+				subversive_activites_upkeep = -0.4
+				foreign_subversive_activites = -0.4
+			}
+		}
+	}
+}

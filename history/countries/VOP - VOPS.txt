@@ -1,4 +1,4 @@
-﻿capital = 3
+﻿capital = 57
 
 set_research_slots = 3
 
@@ -98,20 +98,32 @@ add_ideas = {
 	changeling_race
 	modern_society
 	proper_science_base
+	changeling_garrison
+	partial_economic_mobilisation
+	closed_economy
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	add_ideas = VOP_spystate_lar
+}
+else = {
+	add_ideas = VOP_spystate
 }
 
 create_country_leader = {
-	name = "Gladmane"
-	desc = "POLITICS_GLADMANE"
-	picture = "Gladmane.tga"
+	name = "Sugar Belle"
+	desc = "POLITICS_SUGARBELLE"
+	picture = "Governor.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = libertarianism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = ""
+	name = "Erebus"
 	desc = "POLITICS_EREBUS"
 	picture = "Erebus.tga"
 	expire = "1965.1.1"
@@ -122,25 +134,63 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Coco Pommel"
-	desc = "POLITICS_JETSET"
-	picture = "JetSet.tga"
+	name = "Feather Bangs"
+	desc = "POLITICS_FEATHERBANGS"
+	picture = "FeatherBangs.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socialism
 	traits = {
 
 	}
 }
 
 create_country_leader = {
-	name = "Lefty Pone"
-	desc = "POLITICS_LEFTY"
-	picture = "Lefty.tga"
+	name = "Double Diamond"
+	desc = "POLITICS_DOUBLEDIAMOND"
+	picture = "DoubleDiamond.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = leninism
 	traits = {
 
 	}
+}
+
+create_field_marshal = {
+	name = "'Shadow Spade'"
+	desc = VOP_DESC_SHADOW
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer brilliant_strategist arrow }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+	female = yes
+}
+
+create_corps_commander = {
+	name = "'Daring Do'"
+	desc = VOP_DESC_DARING
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer bleeding_heart medical_expert harmonist_sympathizer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+	female = yes
+}
+
+create_corps_commander = {
+	name = "'The Colt in Crimson'"
+	desc = VOP_DESC_COLT
+	portrait_path = "gfx/leaders/CHN/Venyx.tga"
+	traits = { changeling_race_trait vops_spyofficer trait_reckless changeling_love_succ }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 set_rule = {
