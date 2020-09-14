@@ -13,6 +13,7 @@ ideas = {
 			modifier = {
 				compliance_gain = 0.002
 				conscription_factor = 0.25
+				conscription = 0.025
 			}
 		}
 		VOP_counterterrorism = {
@@ -193,7 +194,7 @@ ideas = {
 			picture = NCH_communist_infiltration_idea
 			removal_cost = -1
 			modifier = {
-				conscription = 0.075
+				conscription = 0.05
 				consumer_goods_factor = -0.1
 				civilian_intel_factor = 0.5
 				army_intel_factor = 0.5
@@ -378,7 +379,7 @@ ideas = {
 			picture = NCH_communist_infiltration_idea
 			removal_cost = -1
 			modifier = {
-				conscription = 0.075
+				conscription = 0.05
 				consumer_goods_factor = -0.1
 				civilian_intel_factor = 0.5
 				army_intel_factor = 0.5
