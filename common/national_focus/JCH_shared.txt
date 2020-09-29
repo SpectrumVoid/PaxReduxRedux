@@ -15,7 +15,7 @@
 	#}
 
 
-##Centrist - eww- Focuses, in total only 8 70 days focuses can be done. Current Total : 19 . Max = 80##
+##Centrist - eww- Focuses, in total only 8 70 days focuses can be done. Current Total : 41 . Max = 80##
 
 
 
@@ -102,6 +102,25 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: focus JCH_health_benefits"
 		##COOL, HEALTH!
 	}
+}
+
+shared_focus = {
+	id = JCH_bureaucratic_reform
+	#icon = 
+	x = 26 
+	y = 3
+	cost = 12
+	prerequisite = {
+		focus = JCH_health_benefits
+	}
+	ai_will_do = {
+		factor = 197
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_bureaucratic_reform"
+		##New National Spirit to represent better bureaucracy
+	}
+
 }
 
 
