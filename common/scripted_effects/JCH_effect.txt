@@ -39,3 +39,17 @@ JCH_decrease_population = {
 		value = 5
 	}
 }
+
+JCH_increase_QG = {
+	add_to_variable =  {
+		var = JCH_QG_support
+		value = 5
+	}
+}
+
+JCH_decrease_QG = {
+	subtract_from_variable = {
+		var = JCH_QG_support
+		value = 5
+	}
+}

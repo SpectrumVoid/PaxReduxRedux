@@ -182,7 +182,7 @@ country_event = {
 			}
 			ROOT = { goto_state = 75 }
 			JCH = {
-				country_event = {id = canterlot.2 days = 10 }
+				country_event = {id = canterlot.2 days = 5}
 			}
 		}
 		JCH = {
@@ -218,6 +218,10 @@ country_event = {
 				var = JCH_populace_support
 				value = 19
 			}
+			add_to_variable = {
+				var = JCH_QG_support
+				value = 23
+			}
 		}
 	}
 
@@ -231,5 +235,7 @@ country_event = {
 	#picture = 
 	is_triggered_only = yes
 	option = {
+		name = canterlot.3.a
+		add_political_power = 50 
 	}
 }

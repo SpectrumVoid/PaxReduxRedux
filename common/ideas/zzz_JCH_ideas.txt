@@ -98,15 +98,46 @@
 	}
 
 	country = {
-		JCH_increased_regulations = {
-			allowed_civil_war = yes
+		JCH_inspect_love_harvest = {
 			allowed = {
 				always = yes
 			}
-			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			modifier = {
+				stability_weekly = -0.01
+				democratic_drift = 0.01
+			}
+		}
+
+		JCH_inspect_garrison = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			modifier = {
+				army_org_factor = -0.30
+				army_morale_factor = -0.30
+				command_power_gain_mult = -0.50
+			}
+		}
+
+		JCH_regulate_love_harvesting = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
 			modifier = {
 				stability_factor = 0.05
-				political_power_gain = -0.05
+				political_power_factor = -0.05
 			}
 		}
 	}

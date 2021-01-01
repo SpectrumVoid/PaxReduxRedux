@@ -1,99 +1,4 @@
-CHN_protectorates = {
-		CHN_canterlot_protectorate = {
-		icon = statue
-		available = {
-			has_government = fascism
-			controls_canterlot = yes
-			EQS = {
-				OR = {
-					is_subject_of = ROOT
-					has_capitulated = yes
-					exists = no
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = controls_canterlot_region_tt
-				101 = { is_owned_and_controlled_by = ROOT }
-				68 = { is_owned_and_controlled_by = ROOT }
-				128 = { is_owned_and_controlled_by = ROOT }
-				OR = {
-					3 = { is_owned_and_controlled_by = ROOT }
-					39 = { is_owned_and_controlled_by = ROOT }
-					104 = { is_owned_and_controlled_by = ROOT }
-					103 = { is_owned_and_controlled_by = ROOT }
-					99 = { is_owned_and_controlled_by = ROOT }
-					any_owned_state = {
-						OR = {
-							region = 41
-						}
-						is_fully_controlled_by = ROOT
-					}
-				}
-				NOT = {
-					has_country_flag = released_canterlot_puppet
-				}
-			}
-			NOT = {
-				JCH= { exists = yes }
-			}
-		}
-		
-		cancel_trigger = {
-			OR = {
-				3 = { NOT = { is_owned_and_controlled_by = ROOT } }
-			}
-		}
-		
-		#available = { hidden_trigger = { has_political_power > 49 has_manpower > 21999 } }
-		
-		#custom_cost_trigger = {
-		#	has_political_power > 49
-		#	has_manpower > 21999
-		#}
-		
-		#custom_cost_text = decision_cost_50_pp_manpower_22000
-		
-        cost = 25
-		days_remove = 60
 
-		ai_will_do = {
-			factor = 100
-		}
-
-		visible = {
-			has_government = fascism
-			controls_canterlot = yes
-			EQS = {
-				OR = {
-					is_subject_of = ROOT
-					has_capitulated = yes
-					exists = no
-				}
-			}
-			NOT = {
-				has_country_flag = released_canterlot_puppet
-			}
-			NOT = {
-				JCH = { exists = yes }
-			}
-		}
-		modifier = {
-			political_power_gain = -0.15
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_canterlot_protectorate"
-			country_event = canterlot.1
-
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision CHN_canterlot_protectorate"
-			#hidden_effect = {
-			#	add_political_power = -50
-			#	add_manpower = -22000
-			#}
-			}
-		}
-	}
 	
 JCH_love_tax_category = {
 
@@ -739,6 +644,7 @@ JCH_love_tax_category = {
 		}
 	}
 }
+
 JCH_suspicion_level_category = {
 	JCH_suspicion_level = { 
 		icon = generic_research
@@ -774,6 +680,8 @@ JCH_Timer_Category = {
 			hidden_trigger = { always = no }
 		}
 
+		cost = 100
+
 		days_mission_timeout = 565
 
 		fire_only_once = yes
@@ -788,94 +696,16 @@ JCH_Timer_Category = {
 
 		cancel_if_not_visible = no
 
+		completion_effect = {
+			add_political_power = 50
+		}
+
 		timeout_effect = {
 			CHN = {
 				annex_country = {
 					target = JCH transfer_troops = yes
 				}
 			}
-		}
-	}
-
-	JCH_VOPS_Influence = {
-		priority = 10 
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		fire_only_once = yes
-
-
-		visible = {
-			tag = JCH
-			has_country_flag = CHN_JCH_made
-			#has_country_flag = JCH_confirm
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		completion_effect = {
-			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
-		}
-	}
-
-	JCH_Heer_Influence = {
-		priority = 10 
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		fire_only_once = yes
-
-
-		visible = {
-			tag = JCH
-			has_country_flag = CHN_JCH_made
-			#has_country_flag = JCH_confirm
-
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		completion_effect = {
-			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
-		}
-	}
-
-	JCH_Populace_Influence = {
-		priority = 10 
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		fire_only_once = yes
-
-
-		visible = {
-			tag = JCH
-			has_country_flag = CHN_JCH_made
-
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		completion_effect = {
-			log = "[GetDateText]: [Root.GetName]: decision JCH_VOPS_Influence"
 		}
 	}
 

@@ -13,136 +13,128 @@
 		#log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
 
 	#}
-
-
-##Centrist - eww- Focuses, in total only 8 70 days focuses can be done. Current Total : 41 . Max = 80##
-
-
+}
 
 shared_focus = {
-	id = JCH_unfortunate_reality
+	id = JCH_it_begins 
 	#icon = 
-	cost = 4
-	mutually_exclusive = {
-		focus = JCH_reformism
-	}
-	ai_will_do = {
-		factor = 200
-	}
-	x = 25 
+	x = 10
 	y = 0 
+	cost = 0 
 
 	completion_reward = {
-		log = "[GetDateText]:[Root.GetName]: focus JCH_unfortunate_reality"
-		add_stability = 0.05
-		add_popularity = {
-			ideology = fascism 
-			popularity = 0.05
-		}
-	}
-
-}
-
-shared_focus = {
-	id = JCH_increase_love_regulations
-	#icon = 
-	cost = 10
-	prerequisite = {
-		id = JCH_unfortunate_reality
-	}
-	ai_will_do = {
-		factor = 199
-	}
-	x = 24
-	y = 1
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_increase_love_regulations"
-		add_ideas = JCH_increased_regulations
-		JCH_increase_loyalist = yes
-		JCH_increase_population = yes
-		JCH_decrease_heer = yes
+		log = "[GetDateText]: [Root.GetName]: focus JCH_it_begins"
+		add_political_power = 100
 	}
 }
 
+##Centrist Foci
 shared_focus = {
-	id = JCH_new_homes
+	id = JCH_coward_reforms
 	#icon = 
-	cost = 7
-	prerequisite = {
-		id = JCH_unfortunate_reality
-	}
-	ai_will_do = {
-		factor = 199
-	}
-	x = 26
-	y = 1
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_new_homes"
-		##Add effects of more population
-	}
-}
-
-shared_focus = {
-	id = JCH_health_benefits
-	#icon = 
-	cost = 8
-	prerequisite = {
-		focus = JCH_increase_love_regulations
-		focus = JCH_new_homes
-	}
-	ai_will_do = {
-		factor = 198
-	}
-	x = 25
-	y = 2 
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_health_benefits"
-		##COOL, HEALTH!
-	}
-}
-
-shared_focus = {
-	id = JCH_bureaucratic_reform
-	#icon = 
-	x = 26 
-	y = 3
-	cost = 12
-	prerequisite = {
-		focus = JCH_health_benefits
-	}
-	ai_will_do = {
-		factor = 197
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_bureaucratic_reform"
-		##New National Spirit to represent better bureaucracy
-	}
-
-}
-
-
-##Reformist##
-
-shared_focus = {
-	id = JCH_reformism
-	#icon = 
-	cost = 7
-	mutually_exclusive = {
-		focus = JCH_unfortunate_reality
-	}
-	ai_will_do = {
-		factor = 0
-	}
 	x = 5
-	y = 0
+	y = 1
+	cost = 5
+
+	mutually_exclusive = {
+		focus = JCH_big_ball_reforms
+	}
+
+	prerequisite = {
+		focus = JCH_it_begins
+	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_reformism"
-		country_event = {
-			id = canterlot.3 hours = 10
-		}
+		log = "[GetDateText]: [Root.GetName]: focus JCH_coward_reforms"
+
 	}
 }
+
+##Reform anyways
+
+shared_focus = {
+	id = JCH_big_ball_reforms
+	#icon = 
+	x = 15
+	y = 1
+	cost = 5
+
+	mutually_exclusive = {
+		focus = JCH_coward_reforms
+	}
+
+	ai_will_do = {
+		factor = 50
+	}
+
+	prerequisite = {
+		focus = JCH_it_begins
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_big_ball_reforms"
+		country_event = { id = Canterlot.3 days = 2 }
+	}
+}
+
+shared_focus = {
+	id = JCH_inspect_love_harvesting
+	#icon = 
+	x = 14
+	y = 2
+	cost = 2 
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: JCH_inspect_love_harvesting"
+		##Inspect love harvesting
+		add_timed_idea = { idea = JCH_inspect_love_harvest days = 50 }
+		JCH_decrease_heer = yes
+		JCH_increase_population = yes
+
+	}
+}
+
+shared_focus = {
+	id = JCH_inspect_garrison
+	#icon
+	x = 16
+	y = 2
+	cost = 4 
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_inspect_garrison"
+		add_timed_idea = { idea = JCH_inspect_garrison days = 14 }
+		JCH_decrease_loyalist  = yes 
+		JCH_increase_QG = yes
+	}
+}
+
+shared_focus = {
+	id = JCH_regulate_love_harvesting
+	#icon = 
+	x = 13
+	y = 3
+	cost = 8 
+
+	prerequisite = {
+		focus = JCH_inspect_love_harvesting
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_regulate_love_harvesting"
+		add_ideas = JCH_regulated_love_harvesting
+		JCH_decrease_heer = yes
+		JCH_decrease_loyalist = yes
+		JCH_decrease_QG = yes 
+		JCH_increase_population = yes
+	}
+}
+

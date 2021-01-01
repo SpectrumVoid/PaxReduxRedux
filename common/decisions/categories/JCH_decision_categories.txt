@@ -3,6 +3,9 @@ JCH_Timer_Category = {
 	allowed = {
 		original_tag = JCH
 	}
+	visible = {
+		tag = JCH
+	}
 	priority = {
 		base = 200
 	}
