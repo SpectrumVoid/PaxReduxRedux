@@ -13,7 +13,7 @@
 		#log = "[GetDateText]: [Root.GetName]: Focus destroy_thoraxian_opposition"
 
 	#}
-}
+#}
 
 shared_focus = {
 	id = JCH_it_begins 
@@ -99,28 +99,9 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = JCH_inspect_garrison
-	#icon
-	x = 16
-	y = 2
-	cost = 4 
-
-	prerequisite = {
-		focus = JCH_big_ball_reforms
-	}
-
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_inspect_garrison"
-		add_timed_idea = { idea = JCH_inspect_garrison days = 14 }
-		JCH_decrease_loyalist  = yes 
-		JCH_increase_QG = yes
-	}
-}
-
-shared_focus = {
 	id = JCH_regulate_love_harvesting
 	#icon = 
-	x = 13
+	x = 12
 	y = 3
 	cost = 8 
 
@@ -138,3 +119,290 @@ shared_focus = {
 	}
 }
 
+shared_focus = {
+	id = JCH_arrest_overconsumers
+	#icon = 
+	x = 14 
+	y = 3
+	cost = 5 
+
+	prerequisite = {
+		focus = JCH_inspect_love_harvesting
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_arrest_overconsumers"
+		add_timed_idea = { idea = JCH_arrested_overconsumers days = 10 }
+		JCH_decrease_heer = yes
+		JCH_increase_loyalist = yes
+		JCH_decrease_QG = yes
+		JCH_increae_population = yes
+	}
+}
+
+
+shared_focus = {
+	id = JCH_inspect_garrison
+	#icon
+	x = 16
+	y = 2
+	cost = 2
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_inspect_garrison"
+		add_timed_idea = { idea = JCH_inspect_garrison days = 14 }
+		JCH_decrease_loyalist  = yes 
+		JCH_increase_QG = yes
+	}
+}
+
+
+shared_focus = {
+	id = JCH_remove_radicals
+	#icon = 
+	x = 16 
+	y = 3 
+
+	cost = 3 
+
+	prerequisite = {
+		focus = JCH_inspect_garrison
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_remove_radicals"
+		##Remove Radicals, revome some facism and a bit of the loyalists
+	}
+}
+
+shared_focus = {
+	id = JCH_route_in_moderates
+	#icon = 
+	x = 18
+	y = 3
+	cost = 6 
+
+	prerequisite = {
+		focus = JCH_inspect_garrison
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_route_in_moderates"
+		##Getting in some mmoderates like Jachs
+	}
+}
+
+shared_focus = {
+	id = JCH_enforce_standards
+	#icon = 
+	x = 17
+	y = 4
+	cost = 7 
+
+	prerequisite = {
+		focus = JCH_remove_radicals
+	}
+	prerequisite = {
+		focus = JCH_route_in_moderates
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_enforce_standards"
+		##Idea that keeps an decrease of facism
+	}
+}
+
+shared_focus = {
+	id = JCH_finding_like_minded
+	#icon = 
+	x = 24
+	y = 2
+	cost = 1 
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_finding_like_minded"
+		##Event to start finding supporters
+	}
+
+}
+
+shared_focus = {
+	id = JCH_Vaspier_help
+	#icon = 
+	x = 23
+	y = 3 
+	cost = 2 
+
+	prerequisite = {
+		focus = JCH_finding_like_minded
+	}
+
+	complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_Vaspier_help"
+		##Asking Vaspier for help, for some help removing the QG
+	}
+}
+
+shared_focus = {
+	id = JCH_help_for_money
+	#icon = 
+	x = 22
+	y = 4
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_Vaspier_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_help_for_money"
+		##In exchange for help against the QG, Jachs provide some money to the VOPS in exchange for the explusion of the QG
+	}
+}
+
+shared_focus = {
+	id = JCH_the_triumvirate
+	#icon = 
+	x = 24
+	y = 4
+	cost = 2 
+
+	prerequisite = {
+		focus = JCH_Vaspier_help
+	}
+	prerequisite = {
+		focus = JCH_manehatten_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_the_triumvirate"
+		##Event that creates an alliance between Vaspier, Jachs, and Lilac. United against the QG. Because fuck the QG
+	}
+}
+
+shared_focus = {
+	id = JCH_manehatten_help 
+	#icon = 
+	x = 25
+	y = 3
+	cost = 2
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_manehatten_help"
+		##Asking Lilac for some experienced drill sergeants
+	}
+}
+
+shared_focus = {
+	id = JCH_covering_our_tracks
+	#icon = 
+	x = 27
+	y = 4
+	cost = 1
+
+	prerequisite = {
+		focus = JCH_manehatten_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_rewriting_history"
+		##AKA PRetending to Woo Lilac
+	}
+}
+
+shared_focus = {
+	id = JCH_troop_exchange
+	#icon = 
+	x = 28 
+	y = 5
+	cost = 3 
+
+	prerequisite = {
+		focus = JCH_covering_our_tracks
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_troop_exchange"
+		##Get some troops
+	}
+}
+
+shared_focus = {
+	id = JCH_material_exchange
+	#icon = 
+	x = 26
+	y = 5 
+	cost = 4
+
+	prerequisite = {
+		focus = JCH_covering_our_tracks
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_material_exchange"
+		##A part of JCH's resources goes to Lilac, in exchange for monthly gun shipments
+	}
+}
+
+shared_focus = {
+	id = JCH_construct_VOPS_outpost
+	#icon = 
+	x = 23
+	y = 6
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_help_for_money
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_construct_VOPS_outpost"
+		##Fuck the QG, also smoe damage to the Heer help
+	}
+}
+
+shared_focus = {
+	id = JCH_collecting_evidence
+	#icon = 
+	x = 21
+	y = 5
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_help_for_money
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_collecting_evidence"
+		##Collecting Corruption charges against the QG
+	}
+}
+
+shared_focus = {
+	id = JCH_replacing_the_QG
+	#icon = 
+	x = 21
+	y = 6
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_collecting_evidence
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_replacing_the_QG"
+		##Lower the QG. 
+	}
+}

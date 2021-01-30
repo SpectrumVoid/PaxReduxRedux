@@ -140,6 +140,20 @@
 				political_power_factor = -0.05
 			}
 		}
+
+		JCH_arrested_overconsumers = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#picture = 
+			modifier = {
+				political_power_factor = -0.50
+				stability_factor = -0.10
+			}
+		}
 	}
 	
 
