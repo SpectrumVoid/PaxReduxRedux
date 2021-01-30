@@ -212,9 +212,36 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus JCH_enforce_standards"
-		##Idea that keeps an decrease of facism
+		##Idea that keeps an decrease of facism, and raise loyalty a bit
 	}
 }
+
+shared_focus = {
+	id = JCH_gitgut_soldiers
+	#icon= 
+	x = 19
+	y = 4
+	cost = 5 
+
+	prerequisite = {
+		focus = JCH_route_in_moderates
+	}
+
+	available = {
+		has_completed_focus = JCH_manehatten_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_gitgut_soldiers"
+		##More Army XP
+	}
+}
+
+shared_focus = {
+	id = JCH_
+}
+
+
 
 shared_focus = {
 	id = JCH_finding_like_minded
@@ -369,7 +396,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus JCH_construct_VOPS_outpost"
-		##Fuck the QG, also smoe damage to the Heer help
+		##Fuck the QG, also smoe damage to the Heer help, More help to VOPS
 	}
 }
 
@@ -403,6 +430,27 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus JCH_replacing_the_QG"
-		##Lower the QG. 
+		##Lower the QG's opinions, making them angry
 	}
 }
+
+shared_focus = {
+	id = JCH_tie_loyalty_Jachs
+	#icon= 
+	x = 27
+	y = 6
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_material_exchange
+	}
+	prerequisite = {
+		focus = JCH_troop_exchange
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_tie_loyalty_Jachs"
+		#Heer Loyalty Up, Up. Population Down and 
+	}
+}
+
