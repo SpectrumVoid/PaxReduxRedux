@@ -140,6 +140,28 @@ shared_focus = {
 	}
 }
 
+shared_focus = {
+	id = JCH_centralize_love_harvesting
+	#icon = 
+	x = 13
+	y = 4 
+	cost = 5
+
+	prerequisite = {
+		focus = JCH_regulate_love_harvesting
+	}
+	prerequisite = {
+		focus = JCH_arrest_overconsumers
+	}
+
+	coompletion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_centralize_love_harvesting"
+		##Create an agency that deals with love harvesting and enfroces Jach's standards
+	}
+}
+
+
+
 
 shared_focus = {
 	id = JCH_inspect_garrison
@@ -238,9 +260,291 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = JCH_
+	id = JCH_ensure_loyalty
+	#icon = 
+	x = 19
+	y = 5
+	cost = 7 
+
+	prerequisite = {
+		focus = JCH_gitgut_soldiers
+	}
+	prerequisite = {
+		focus = JCH_help_for_money
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_ensure_loyalty"
+		##Idea that increases heer support, and decreases QG support
+	}
 }
 
+shared_focus = {
+	id = JCH_some_high_help
+	#icon
+	x = 15
+	y = 5
+	cost = 2 
+
+	prerequisite = {
+		focus = JCH_big_ball_reforms
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_some_high_help"
+		##Finnicus pulls strings to move money into Canterlot
+	}
+}
+
+shared_focus = {
+	id = JCH_industrial_investment
+	#icon = 
+	x = 16
+	y = 6
+	cost = 4
+
+	prerequisite = {
+		focus = JCH_some_high_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_industrial_investment"
+		##Investing in Canterlot, raise Populace Support with some QG sypport
+	}
+}
+
+shared_focus = {
+	id = JCH_invest_research
+	#icon = 
+	x = 14
+	y = 6 
+	cost = 5
+
+	prerequisite = {
+		focus = JCH_some_high_help
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_invest_research"
+		##Investing in Research. 
+	}
+}
+
+shared_focus = {
+	id = JCH_better_love_harvesting_techniques
+	#icon = 
+	x = 12
+	y = 7
+	cost = 5
+
+	prerequisite = {
+		focus = JCH_invest_research
+	}
+	prerequisite = {
+		focus = JCH_centralize_love_harvesting
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_better_love_harvesting_techniques"
+		##Something that improves how much love you can collect. 
+	}
+}
+
+shared_focus = {
+	id = JCH_esoteric_insight
+	#icon = 
+	x = 14
+	y = 7
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_invest_research
+	}
+
+	available = {
+		has_completed_focus = JCH_love_harvesting_techniques
+	}
+
+	mutually_exclusive = {
+		focus = JCH_esoteric_expertise
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_esoteric_insight"
+		##Speed up to love research
+	}
+}
+
+shared_focus = {
+	id = JCH_marsellio_division
+	#icon = 
+	x = 12
+	y = 8 
+	cost = 5 
+
+	prerequisite = {
+		focus = JCH_love_harvesting_techniques
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_marsellio_division"
+		##Rsearch more into this alt-love source
+	}
+}
+
+shared_focus = {
+	id = JCH_esoteric_expertise
+	#icon = 
+	x = 16
+	y = 7 
+	cost = 3
+
+	prerequistie = {
+		focus = JCH_industrial_investment
+	}
+
+	mutually_exclusive = {
+		focus = JCH_esoteric_insight
+	}
+
+	completion_effect = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_esoteric_expertise"
+		##Ohh more building slots and better production speed! Thanks Unicorn Supremascists! 
+	}
+}
+
+shared_focus = {
+	id = JCH_local_garrisons
+	#icon = 
+	x = 18
+	y = 6
+	cost = 5 
+
+	prerequisite = {
+		focus = JCH_enforce_standards
+	}
+	prerequisite = {
+		focus = JCH_ensure_loyalty
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_local_garrisons"
+		##More recruitable pop. 
+	}
+}
+
+shared_focus = {
+	id = JCH_disappearing_goods
+	#icon = 
+	x = 20
+	y = 7 
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_local_garrisons
+	}
+	prerequisite = {
+		focus = JCH_replacing_the_QG
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_disappearing_goods"
+		##More weapons for the eventual rebellion
+	}
+}
+
+shared_focus = {
+	id = JCH_putting_on_a_show
+	#icon = 
+	x = 21.5
+	y = 8
+	cost = 5
+
+	prerequisite = {
+		focus = JCH_disappearing_goods
+	}
+	prerequisite = {
+		focus = JCH_construct_VOPS_outpost
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_putting_on_a_show"
+		##Raises Resistance with an enet. 
+	}
+
+
+
+
+}
+
+shared_focus = {
+	id = JCH_getting_panzers
+	#icon = 
+	x = 18
+	y = 7
+	cost = 5
+
+	prerequisite = {
+		focus = JCH_local_garrisons
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_getting_panzers"
+		##You get one Panzer Division
+	}
+}
+
+shared_focus = {
+	id = JCH_canterlot_aa
+	#icon = 
+	x = 17
+	y = 8
+	cost = 4
+
+	prerequisite = {
+		focus = JCH_getting_panzers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_canterlot_aa"
+		##AA
+	}
+}
+
+shared_focus = {
+	id = JCH_manehatten_tactics
+	#icon = 
+	x = 19 
+	y = 8 
+	cost = 4
+
+	prerequisite = {
+		focus = JCH_getting_panzers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_manehatten_tactics"
+		##Research in Land Doctrine
+	}
+}
+
+shared_focus = {
+	id = JCH_we_need_more_time
+	#icon = 
+	x = 15
+	y = 9
+	cost = 7 
+
+	prerequisite = {
+		focus = JCH_esoteric_expertise
+		focus = JCH_esoteric_insight
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_we_need_more_time"
+		##You get another year
+	}
+}
 
 
 shared_focus = {
@@ -335,7 +639,7 @@ shared_focus = {
 shared_focus = {
 	id = JCH_covering_our_tracks
 	#icon = 
-	x = 27
+	x = 26
 	y = 4
 	cost = 1
 
@@ -352,7 +656,7 @@ shared_focus = {
 shared_focus = {
 	id = JCH_troop_exchange
 	#icon = 
-	x = 28 
+	x = 27
 	y = 5
 	cost = 3 
 
@@ -369,7 +673,7 @@ shared_focus = {
 shared_focus = {
 	id = JCH_material_exchange
 	#icon = 
-	x = 26
+	x = 25
 	y = 5 
 	cost = 4
 
@@ -399,6 +703,59 @@ shared_focus = {
 		##Fuck the QG, also smoe damage to the Heer help, More help to VOPS
 	}
 }
+
+shared_focus = {
+	id = JCH_some_unlucky_convoys
+	#icon = 
+	x = 25
+	y = 7
+	cost = 4 
+
+	prerequisite = {
+		focus = JCH_construct_VOPS_outpost
+		focus = JCH_some_misplaced_goods
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_some_unlucky_convoys"
+		##Oh no! This convoy of prisoners got attacked! Truly a shame 
+	}
+}
+
+shared_focus = {
+	id = JCH_finding_the_trail
+	#icon = 
+	x = 23
+	y = 7
+	cost = 1
+
+	prerequisite = {
+		focus = JCH_construct_VOPS_outpost
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_finding_the_trail"
+		##Tracking down Starlight and Trixie
+	}
+}
+
+shared_focus = {
+	id = JCH_picking_the_scent
+	#icon = 
+	x = 24
+	y = 8
+	cost = 1
+
+	prerequisite = {
+		focus = JCH_finding_the_trail
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_picking_the_scent"
+		##Getting closer...
+	}
+
+}
+
 
 shared_focus = {
 	id = JCH_collecting_evidence
@@ -435,9 +792,9 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = JCH_tie_loyalty_Jachs
+	id = JCH_some_misplaced_goods
 	#icon= 
-	x = 27
+	x = 26
 	y = 6
 	cost = 3
 
@@ -449,8 +806,68 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_tie_loyalty_Jachs"
-		#Heer Loyalty Up, Up. Population Down and 
+		log = "[GetDateText]: [Root.GetName]: focus JCH_some_misplaced_goods"
+		#Some arms "disappear" and end up in the hands of the ELF's Canterlot Chapter. 
+	}
+}
+
+shared_focus = {
+	id = JCH_almost_dying
+	#icon = 
+	x = 24
+	y = 9 
+	cost = 2 
+
+	prerequisite = {
+		focus = JCH_putting_on_a_show
+	}
+	prerequisite = {
+		focus = JCH_picking_the_scent
+	}
+	prerequisite = {
+		focus = JCH_some_unlucky_convoys
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_almost_dying"
+		
+	}
+}
+
+shared_focus = {
+	id = JCH_plans_of_rebellion
+	#icon = 
+	x = 19.5
+	y = 10 
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_almost_dying
+	}
+	prerequisite = {
+		focus = JCH_we_need_more_time
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_plans_of_rebellion"
+		##Gives idea in the event of rebellion
+	}
+}
+
+shared_focus = {
+	id = JCH_reining_in_the_angery
+	#icon = 
+	x = 18.5
+	y = 11
+	cost = 3 
+
+	prerequisite = {
+		focus = JCH_plans_of_rebellion
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_reining_in_the_angery"
+		##Please stop firebombing nurseries
 	}
 }
 
