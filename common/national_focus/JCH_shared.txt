@@ -812,7 +812,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = JCH_almost_dying
+	id = JCH_establishing_contact
 	#icon = 
 	x = 24
 	y = 9 
@@ -829,45 +829,157 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_almost_dying"
+		log = "[GetDateText]: [Root.GetName]: focus JCH_establishing_contact"
+		##Contacting the ELF to help him to fight the QG... for now
 		
 	}
 }
 
 shared_focus = {
-	id = JCH_plans_of_rebellion
+	id = JCH_preparing_plans
 	#icon = 
 	x = 19.5
-	y = 10 
-	cost = 3
+	y = 10
+	cost = 1
 
-	prerequisite = {
-		focus = JCH_almost_dying
+	available = {
+		has_completed_focus = JCH_we_need_more_time
 	}
-	prerequisite = {
-		focus = JCH_we_need_more_time
+	available = {
+		has_completed_focus = JCH_establishing_contact
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_plans_of_rebellion"
-		##Gives idea in the event of rebellion
+		log = "[GetDateText]: [Root.GetName]: focus JCH_preparing_plans"
+		##Loads new focus tree
+		load_focus_tree = JCH_part_two
+	}
+}
+
+shared_focus = { 
+	id = JCH_whispers_of_rebellion
+	#icon = 
+	
+	x = 19.5
+	y = 12
+	cost = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_whispers_of_rebellion"
+		##Event where Jachs sits down with Lilac, before everything goes to shit
 	}
 }
 
 shared_focus = {
-	id = JCH_reining_in_the_angery
+	id = JCH_laying_plans
 	#icon = 
-	x = 18.5
-	y = 11
-	cost = 3 
+	x = 16.5
+	y = 13
+	cost = 2
 
 	prerequisite = {
-		focus = JCH_plans_of_rebellion
+		focus = JCH_whispers_of_rebellion
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus JCH_reining_in_the_angery"
-		##Please stop firebombing nurseries
+		log = "[GetDateText]: [Root.GetName]: focus JCH_laying_plans"
+		##Gives bonsus during intial stages of civil war. 
 	}
 }
 
+shared_focus = {
+	id = JCH_centralised_plans
+	#icon = 
+	x = 15.5
+	y = 14
+	cost = 1 
+
+	mutually_exclusive = {
+		focus = JCH_decentralised_plans
+	}
+
+	prerequisite = {
+		focus = JCH_laying_plans
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_centralised_plans"
+		##All troops are in Canterlot
+	}
+}
+
+shared_focus = {
+	id = JCH_decentralised_plans
+	#icon = 
+	x = 17.5
+	y = 14
+	cost = 1
+
+	mutually_exclusive = {
+		focus = JCH_centralised_plans
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_decentralised_plans"
+		##Not all troops in Canterlot
+	}
+}
+
+shared_focus = {
+	id = JCH_ELF_deals
+	#icon = 
+	x = 22.5
+	y = 13
+	cost = 3
+
+	prerequisite = {
+		focus = JCH_whispers_of_rebellion
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_ELF_deals"
+		##REining the radical bastards
+	}
+}
+
+shared_focus = {
+	id = JCH_ELF_future_backstabs
+	#icon =
+	x = 21.5
+	y = 14
+	cost = 1
+
+	prerequisite = {
+		focus = JCH_ELF_deals
+	}
+
+	mutually_exclusive = {
+		focus = JCH_ELF_no_backstabs
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_ELF_future_backstabs"
+		##Backstab yes?
+	}
+}
+
+shared_focus = {
+	id = JCH_ELF_no_backstabs
+	#icon =
+	x = 23.5
+	y = 14
+	cost = 1
+
+	prerequisite = {
+		focus = JCH_ELF_deals
+	}
+
+	mutually_exclusive = {
+		focus = JCH_ELF_future_backstabs
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus JCH_ELF_future_backstabs"
+		##Backstab no?
+	}
+}

@@ -11,3 +11,17 @@ focus_tree = {
 	continuous_focus_position = { x = 2700 y = 1350 }
 	shared_focus = JCH_it_begins
 }
+
+focus_tree = {
+	id = JCH_part_two
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JCH
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2700 y = 1350 }
+	shared_focus = JCH_whispers_of_rebellion
+}
